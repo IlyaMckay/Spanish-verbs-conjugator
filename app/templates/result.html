@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conjugations for {{ verb.capitalize() }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Спряжения для глагола {{ verb.capitalize() }}</h1>
+        {% for tense, pronouns in conjugations.items() %}
+        <div class="tense-container">
+            <h2>{{ tense | safe }}</h2>
+            <div class="tables-container">
+                <div class="table-column">
+                    <table>
+                        {% for pronoun, conjugation in pronouns.items() %}
+                        <tr>
+                            <td class="pronoun">{{ pronoun }}</td>
+                            <td class="conjugation">{{ conjugation }}</td>
+                        </tr>
+                        {% endfor %}
+                    </table>
+                </div>
+                <div class="table-column">
+                    <table>
+                        <tr>
+                            <td class="placeholder" style="font-size: 14px; padding-left: 8px;"><b style="color: #7891BF">Использование 1:</b>
+                                Факты и утверждения. Не для кроткосрочных процессов.<br>
+                                <b style="color: #7891BF">Пример:</b> El niño no come pescado.<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                Ребенок не ест рыбу (Никогда. Ему не нравится)<br><br>
+                                <b style="color: #7891BF">Использование 2:</b> 
+                                Вероятное и возможное условие, в настоящем времени и в будущем.<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                В сочетании с предложениями в настоящем времени или в будущем.<br>
+                                <b style="color: #7891BF">Пример:</b> Si llueve mañana, me quedaré en casa.<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                Если завтра будет дождь, я останусь дома.</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+        <br>
+        <a href="/">Назад</a>
+    </div>
+</body>
+</html>

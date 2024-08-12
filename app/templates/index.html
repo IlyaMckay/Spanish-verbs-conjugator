@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spanish Verb Conjugator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container" style="width: max-content">
+        <h1>Спряжатор испанского языка</h1>
+        <form action="/result" method="post">
+            <label for="region">Выберите местоимения:</label>
+            <select id="region" name="region">
+                <option value="argentina">Con Voseo 🇦🇷 🇺🇾 🇵🇾 🇨🇷 🇸🇻 🇳🇮 🇭🇳</option>
+                <option value="espana">Vosotros 🇪🇸 🇬🇶</option>
+                <option value="mexico">Sin Voseo 🇲🇽 🇨🇴 🇻🇪 🇨🇺 🇵🇪 🇨🇱 🇧🇴 🇪🇨 🇵🇦 🇩🇴 🇺🇸 🇬🇹 🇮🇨</option>
+            </select>
+            <br><br>
+            <label for="verb">Введите глагол:</label>
+            <input type="text" id="verb" name="verb" placeholder="Amar/Amarse" required>
+            <br><br>
+            <input type="submit" value="Спрягать">
+        </form>
+    </div>
+</body>
+</html>
