@@ -629,29 +629,296 @@ class Conjugador:
         :return: A filtered dictionary of conjugations with specified accents removed.
         """
         esp_to_rus_dict = {
-            'Presente indicativo': '1: Настоящее время<br>2: Условие "если"',
-            'Presente con Estar': 'Краткосрочный и/или постоянный процесс в настоящем времени',
-            'Preterito perfecto compuestas comunes': 'Расширенное прошедшее время',
-            'Preterito perfecto compuestas comunes con Estar': 'Процесс за последнее время',
-            'Preterito indicativo': 'Прошедшее время совершённого вида',
-            'Imperfecto indicativo': 'Прошедшее время несовершённого вида',
-            'Pasado continuo': 'Процесс в прошлом',
-            'Pluscuamperfecto compuestas comunes': 'Действие завершилось до другого момента в прошлом',
-            'Preterito anterior indicativo': 'Процесс завершился как условие для другого действия',
-            'Pluscuamperfecto continuo': 'Краткосрочный процесс до другого момента в прошлом',
-            'Intencion interrumpida': '1: Прерванное намерение<br>2: Предсказание в прошлом',
-            'Imperativo afirmativo': 'Утвердительное повелительное наклонение',
-            'Imperativo negativo': 'Отрицательное повелительное наклонение',
-            'Cohortativo afirmativo': 'Гортатив (утвердительный)',
-            'Cohortativo negativo': 'Гортатив (отрицательный)',
-            'Futuro con Ir a': '1: Будущее время (наиболее распространённая форма)<br>2: Недоверие о настоящем времени или о будущем',
-            'Futuro indicativo': '1: Будущее время (формальное)<br>2: Гипотеза о настоящем времени',
-            'Preterito perfecto compuestos del subjuntivo': 'Процесс будет завершён как условие для другого действя',
-            'Futuro perfecto compuestas comunes': '1: Действие будет завершено до другого момента в будущем<br>2: Гипотеза о прошлом',
-            'Futuro perfecto con Ir a': '1: Действие будет завершено до другого момента в будущем<br>2: Недоверие о прошлом',
-            'Presente subjuntivo': 'Сослагательное наклонение 1',
-            'Imperfecto subjuntivo': 'Сослагательное наклонение 2',
-            'Futuro subjuntivo': 'Сослагательное наклонение 3',
+            'Presente indicativo': {
+                '1: Настоящее время<br>2: Условие "если"': 
+                '''<b style="color: #7891BF">Использование 1: </b>
+                    Факты и утверждения. Не для кроткосрочных процессов.<br>
+                    <b style="color: #7891BF">Пример: </b>El niño no come pescado.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Ребёнок не ест рыбу (Никогда. Ему не нравится)<br><br>
+                    <b style="color: #7891BF">Использование 2: </b> 
+                    Вероятное и возможное условие, в настоящем времени и в будущем.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    В сочетании с предложениями в настоящем времени или в будущем.<br>
+                    <b style="color: #7891BF">Пример: </b>Si <u>llueve</u> mañana, me quedaré en casa.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Если завтра <u>будет</u> дождь, я останусь дома.'''
+            },
+            'Presente con Estar': {
+                'Краткосрочный и/или постоянный процесс в настоящем времени':
+                '''<b style="color: #7891BF">Использование: </b>
+                    Факты и утверждения. Для кроткосрочных и постоянных процессов в настоящем времени.<br>
+                    <b style="color: #7891BF">Пример: </b>Están durmiendo.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Они спят.'''
+            },
+            'Preterito perfecto compuestas comunes': {
+                'Расширенное прошедшее время'
+                '''<b style="color: #7891BF">Использование: </b>
+                     Факты и утверждения. Продолжающееся действие / Может повторяться / Пока нет, но ещё возможно.<br>
+                    <b style="color: #7891BF">Примеры: </b>Ha llovido todo el día.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Весь день шёл дождь (и всё ещё идёт).<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Me ha llamado cinco veces hoy.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Сегодня она звонила мне пять раз (и может позвонить снова).<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    No hemos tenido problemas con este ascensor.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    У нас (до сих пор) не было проблем с этим лифтом.'''
+            },
+            'Preterito perfecto compuestas comunes con Estar': {
+                'Процесс за последнее время': 
+                '''<b style="color: #7891BF">Использование: </b>
+                    Факты и утверждения. Продолжающийся процесс за последнее время.<br>
+                    <b style="color: #7891BF">Пример: </b>He estado viajando por tres semanas.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Я путешествую уже три недели (и я всё ещё в пути).'''
+            },
+            'Preterito indicativo': {
+                'Прошедшее время совершённого вида':
+                '''<b style="color: #7891BF">Использование: </b>
+                    Факты и утверждения. Описание целого, завершенного действия в прошлом.<br>
+                    <b style="color: #7891BF">Пример: </b>Compré frutas ayer.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Вчера я купил фрукты.'''
+            },
+            'Imperfecto indicativo': {
+                'Прошедшее время несовершённого вида':
+                '''<b style="color: #7891BF">Использование: </b>
+                    Факты и утверждения. Описание части действия или обычай в прошлом.<br>
+                    <b style="color: #7891BF">Пример: </b>Yo <u>jugaba</u> en este parque cuando era niño.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Я играл в этом парке когда был ребёнком.'''
+            },
+            'Pasado continuo': {
+                'Процесс в прошлом':
+                '''<b style="color: #7891BF">Использование 1: </b>
+                    Факты и утверждения. Описание краткосрочного процесса, во время момента в прошлом.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    В сочетании с предложениями в прошедшем времени совершённого вида.<br>
+                    <b style="color: #7891BF">Пример: </b>Estábamos comiendo cuando sonó la alarma.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Мы ели, когда сработала сигнализация.<br>'''
+            },
+            'Pluscuamperfecto compuestas comunes': {
+                'Действие завершилось до другого момента в прошлом':
+                '''<b style="color: #7891BF">Использование 1: </b>
+                    Факты и утверждения. Действие завершилось до другого момента в прошлом.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    В сочетании с предложениями в прошедшем времени совершённого вида.<br>
+                    <b style="color: #7891BF">Пример: </b>Ya habían inventado el teléfono cuando se popularizó la radio.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Телефон уже был изобретен, когда радио стало популярным.<br>'''
+            },
+            'Preterito anterior indicativo': {
+                'Процесс завершился как условие для другого действия':
+                '''<b style="color: #7891BF">Использование 1: </b>
+                    Факты и утверждения. Условие завершилось и затем последовало другое действие ("После того как").<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    В сочетании с предложениями в прошедшем времени совершённого вида.<br>
+                    <b style="color: #7891BF">Пример: </b>Cuando <u>hube terminado</u> el trabajo, me pagaron.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    (Только) После того, как я закончил работу, они мне заплатили.<br>'''
+            },
+            'Pluscuamperfecto continuo': {
+                'Краткосрочный процесс до другого момента в прошлом':
+                '''<b style="color: #7891BF">Использование 1: </b>
+                    Факты и утверждения. Краткосрочный и постоянный процесс до другого момента в прошлом.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    В сочетании с предложениями в прошедшем времени совершённого вида.<br>
+                    <b style="color: #7891BF">Пример: </b>Yo <u>había estado leyendo</u> sobre canguros cuando me ofrecieron viajar a Australia.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Я читал (немного) о кенгуру (до того момента), когда мне предложили поехать в Австралию.<br>'''
+            },
+            'Intencion interrumpida': {
+                '1: Прерванное намерение<br>2: Предсказание в прошлом':
+                '''<b style="color: #7891BF">Использование 1: </b>
+                    Факты и утверждения. Прерванное намерение ("собирался").<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    В сочетании с предложениями в прошедшем времени.<br>
+                    <b style="color: #7891BF">Пример: </b><u>Íbamos a comprar</u> una computadora nueva pero nos dijeron que era fácil reparar la vieja.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Мы собирались купить новый компьютер, но нам сказали, что было возможно отремонтировать старый.<br><br>
+                    <b style="color: #7891BF">Использование 2: </b> 
+                    Предсказание в прошлом.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    В сочетании с предложениями в прошедшем времени.<br>
+                    <b style="color: #7891BF">Пример: </b> Creíamos que <u>ibas a llegar</u> más tarde.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Мы думали, что ты <u>доберёшься</u> позже.'''
+            },
+            'Imperativo afirmativo': {
+                'Утвердительное повелительное наклонение':
+                '''<b style="color: #7891BF">Пример: </b>¡Miren qué lindo edificio!<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Посмотрите, какое красивое здание!'''
+            },
+            'Imperativo negativo': {
+                'Отрицательное повелительное наклонение':
+                '''<b style="color: #7891BF">Пример: </b>¡No toques esos cables!<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Не трогай эти кабели!'''
+            },
+            'Cohortativo afirmativo': {
+                'Гортатив (утвердительный)':
+                '''<b style="color: #7891BF">Использование: </b>
+                    Призыв к действию с намерением участвовать в реализации желаемой ситуации ("Давайте сделаем!").<br>
+                    <b style="color: #7891BF">Пример: </b>Hablemos mañana.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Давай поговорим завтра.'''
+            },
+            'Cohortativo negativo': {
+                'Гортатив (отрицательный)':
+                '''<b style="color: #7891BF">Использование: </b>
+                    Призыв к бездействию с намерением говорящего самому участвовать в реализации желаемой ситуации ("Давайте не будем делать!").<br>
+                    <b style="color: #7891BF">Пример: </b>No nos peleemos.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Давайте не будем спорить.'''
+            },
+            'Futuro con Ir a': {
+                '1: Будущее время (наиболее распространённая форма)<br>2: Недоверие о настоящем времени или о будущем':
+                '''<b style="color: #7891BF">Использование 1: </b>
+                    Обещания и предсказания. Будущее время (наиболее распространённая форма).<br>
+                    <b style="color: #7891BF">Пример: </b>Voy a comprar frutas.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Я куплю фрукты (Я собираюсь купить фрукты).<br><br>
+                    <b style="color: #7891BF">Использование 2: </b> 
+                    Удивление, недоверие, неодобрение или замешательство о настоящем времени или о будущем.<br>
+                    <b style="color: #7891BF">Примеры: </b>¿Cómo vas a hacer algo tan insensato?<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Как ты собираешься сделать что-то настолько безрассудное?
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    ¡Qué va a ser millonario! ¡Es mitómano!<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Какой из него миллионер?! Он - лжец!'''
+            },
+            'Futuro indicativo': {
+                '1: Будущее время (формальное)<br>2: Гипотеза о настоящем времени':
+                '''<b style="color: #7891BF">Использование 1: </b>
+                    Обещания и предсказания. Будущее время (формальное).<br>
+                    <b style="color: #7891BF">Пример: </b>Volveremos la semana que viene.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Мы вернёмся на следующей неделе.<br><br>
+                    <b style="color: #7891BF">Использование 2: </b> 
+                    Задаваться вопросом, интересоваться или гипотеза о настоящем времени.<br>
+                    <b style="color: #7891BF">Примеры: </b>No sabrá qué hacer.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Разве он может не знать, что делать?
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    ¿Estará triste?<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    (Я не понимаю, почему он ведёт себя так) Возможно, он грустный?'''
+            },
+            'Preterito perfecto compuestos del subjuntivo': {
+                'Процесс будет завершён как условие для другого действя':
+                '''<b style="color: #7891BF">Использование: </b>
+                    Условие будет выполнено, после чего произойдет другое действие ("после того как").<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    В сочетании с предложениями в будущем.
+                    <b style="color: #7891BF">Пример: </b>Cuando <u>hayas terminado</u> el libro, entenderás el problema.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    После того, как закончишь книгу, ты (сразу) поймешь проблему.'''
+            },
+            'Futuro perfecto compuestas comunes': {
+                '1: Действие будет завершено до другого момента в будущем<br>2: Гипотеза о прошлом':
+                '''<b style="color: #7891BF">Использование 1: </b>
+                    Обещания и предсказания. Действие будет завершено до другого момента в будущем.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    В сочетании с предложениями "когда" о будущем времени.<br>
+                    <b style="color: #7891BF">Пример: </b>Cuando lleguemos <u>habrán cerrado</u> las puertas.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Когда мы доберёмся, двери будут закрыты (сейчас они ещё открыты).<br><br>
+                    <b style="color: #7891BF">Использование 2: </b> 
+                    Гипотеза или задаваться вопросом, интересоваться о прошлом. "Haber" указывает, что гипотеза касается прошлого.<br>
+                    <b style="color: #7891BF">Пример: </b>Habrá anotado mal el número.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    (Я не знаю причину, но, вероятно,) он неправильно записал номер.'''
+            },
+            'Futuro perfecto con Ir a': {
+                '1: Действие будет завершено до другого момента в будущем<br>2: Недоверие о прошлом':
+                '''<b style="color: #7891BF">Использование 1: </b>
+                    Обещания и предсказания. Действие будет завершено до другого момента в будущем (неформальное).<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    В сочетании с предложениями "когда" о будущем.<br>
+                    <b style="color: #7891BF">Пример: </b>Cuando vengas <u>voy a haber preparado</u> todo.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Когда ты придёшь (сюда), я (уже) всё приготовлю (но я ещё не приготовил).<br><br>
+                    <b style="color: #7891BF">Использование 2: </b> 
+                    Удивление, недоверие, неодобрение или замешательство о прошлом.<br>
+                    <b style="color: #7891BF">Пример: </b>Qué van a haber estado en la luna!<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Они, должно быть, были на Луне!'''
+            },
+            'Presente subjuntivo': {
+                'Сослагательное наклонение 1':
+                '''<b style="color: #7891BF">Использование 1: </b>
+                    Придаточное предложение после "чтобы" или "что". Пожелания или требования.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    В сочетании с предложениями в настоящем или будущем времени.<br>
+                    <b style="color: #7891BF">Пример: </b>Ella quiere que la <u>ayudemos</u>.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Она хочет, чтобы мы ей помогли.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Espero que <u>puedas</u>.
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Надеюсь, что ты сможешь.<br><br>
+                    <b style="color: #7891BF">Использование 2: </b> 
+                    "Когда" (о будущем).<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    В сочетании с предложениями в будущем времени или в повелительном наклонении.<br>
+                    <b style="color: #7891BF">Пример: </b>Te escribiré cuando <u>llegue</u> a la oficina.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Я напишу тебе, когда приеду в офис.<br><br>
+                    <b style="color: #7891BF">Использование 3: </b> 
+                    "Возможно" (о настоящем времени или о будущем).<br>
+                    <b style="color: #7891BF">Пример: </b>Quizás lo <u>intentemos</u> de nuevo.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Возможно, мы попытаемся снова.'''
+            },
+            'Imperfecto subjuntivo': {
+                'Сослагательное наклонение 2':
+                '''<b style="color: #7891BF">Использование 1: </b>
+                    Придаточное предложение после "чтобы" или "что". Пожелания или требования.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    В сочетании с предложениями в прошедшем времени.<br>
+                    <b style="color: #7891BF">Пример: </b>Ella nos pidió que la <u>ayudásemos</u>.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Она попросила нас, чтобы мы ей помогли.<br><br>
+                    <b style="color: #7891BF">Использование 2: </b> 
+                    Невероятное или невозможное условие, в настоящем времени и в будущем ("если бы").<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    В сочетании с предложениями о последствиях, если условие выполнялось ("бы").<br>
+                    <b style="color: #7891BF">Пример: </b>Si <u>tuviese</u> una lancha iría a la isla.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Если бы у меня была лодка, я бы отправился на остров.'''
+            },
+            'Futuro subjuntivo': {
+                'Сослагательное наклонение 3':
+                '''<b style="color: #7891BF">Использование: </b>
+                    Вероятное и возможное условие, в будущем ("если" или "когда"). Очень официально. Обычно в юридических текстах.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    В сочетании с предложениями в будущем.<br>
+                    <b style="color: #7891BF">Пример: </b>Si el proveedor no <u>entregare</u> el producto dentro de los tres días habiles, la empresa podrá rescindir el contrato.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Если поставщик не доставит товар в течение трёх рабочих дней, компания сможет расторгнуть договор.'''
+            },
             'Pluscuamperfecto compuestos del subjuntivo': 'Сослагательное наклонение 2 в прошлом (так не произошло)',
             'Condicional indicativo': '1: Условие "бы"<br>2: Предсказание в прошлом',
             'Condicional perfecto compuestas comunes': 'Условие "бы" в прошлом (так и не произошло)',
@@ -664,7 +931,6 @@ class Conjugador:
         filtered_conjugations = {}
 
         for tense, pronouns in conjugations.items():
-            # Use the Russian name for the tense if it exists in the dictionary
             rus_tense = esp_to_rus_dict.get(tense, tense)
             filtered_conjugations[rus_tense] = {}
             for pronoun, conjugation in pronouns.items():
