@@ -919,13 +919,87 @@ class Conjugador:
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     Если поставщик не доставит товар в течение трёх рабочих дней, компания сможет расторгнуть договор.'''
             },
-            'Pluscuamperfecto compuestos del subjuntivo': 'Сослагательное наклонение 2 в прошлом (так не произошло)',
-            'Condicional indicativo': '1: Условие "бы"<br>2: Предсказание в прошлом',
-            'Condicional perfecto compuestas comunes': 'Условие "бы" в прошлом (так и не произошло)',
-            'Podria haber': 'Условие "бы мог" в прошлом (так и не произошло)',
-            'Deberia haber': 'Условие "бы следовало" (так и не произошло)',
-            'Puede haber': 'Гипотеза о прошлом',
-            'Debe haber': 'Вывод о прошлом'
+            'Pluscuamperfecto compuestos del subjuntivo': {
+                'Сослагательное наклонение 2 в прошлом (так не произошло)':
+                '''<b style="color: #7891BF">Использование: </b>
+                    Условие, которое не исполнилось в прошлом и уже невозможно ("если бы"). "Haber" отодвигает условие в прошлое.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    В сочетании с предложениями о последствиях, которые не были выполнены в прошлом ("бы").<br>
+                    <b style="color: #7891BF">Примеры: Si ella me <u>hubiese dicho</u> que iba a venir con amigos, habría preparado más comida.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Если бы она сказала мне (но не сказала), что она собиралась прийти с друзьями, я бы приготовил больше еды (но не приготовил).<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Si mi abuela no <u>se hubiese muerto</u>, estaría viva. (выражение)<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Если бы моя бабушка не умерла (но она умерла), она была бы жива.'''
+            },
+            'Condicional indicativo': {
+                '1: Условие "бы"<br>2: Предсказание в прошлом':
+                '''<b style="color: #7891BF">Использование 1: </b>
+                    Последствие если условие выполняется. Совет.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    В сочетании с предложениями в сослагательном наклонении 2.<br>
+                    <b style="color: #7891BF">Примеры: </b>Si tuviese mis herramientas aquí lo <u>repararía</u>.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Если бы у меня были здесь инструменты, я бы его починил.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Yo no iría a ese lugar.
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Я бы туда не пошёл.<br><br>
+                    <b style="color: #7891BF">Использование 2: </b> 
+                    Предсказание в прошлом.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    В сочетании с предложениями в прошедшем времени.<br>
+                    <b style="color: #7891BF">Пример: </b>Creí que <u>sería</u> más difícil.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Я думал, что <u>будет</u> сложнее.'''
+            },
+            'Condicional perfecto compuestas comunes': {
+                'Условие "бы" в прошлом (так и не произошло)':
+                '''<b style="color: #7891BF">Использование: </b>
+                    Последствие, которое не было выполнено в прошлом и уже невозможно. "Haber" отодвигает последствие в прошлое.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    В сочетании с предложениями в сослагательном наклонении (уже невозможно).<br>
+                    <b style="color: #7891BF">Пример: Si hubiésemos sabido cómo se comporta la gente aquí en año nuevo, <u>habríamos viajado</u> en otro momento.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Если бы мы знали (но не знали), как люди ведут себя здесь в Новый год, мы бы путешествовали в другой момент (но мы уже здесь).'''
+            },
+            'Podria haber': {
+                'Условие "бы мог" в прошлом (так и не произошло)':
+                '''<b style="color: #7891BF">Использование: </b>
+                    Действие, которое не произошло, но было возможно в прошлом. "Haber" отодвигает возможность в прошлое.<br>
+                    <b style="color: #7891BF">Пример: ¡Podrías haber incendiado la casa con tus experimentos!<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Ты мог бы поджечь дом (но не поджёг и риск уже исчез) своими экспериментами!'''
+            },
+            'Deberia haber': {
+                'Условие "бы следовало" (так и не произошло)':
+                '''<b style="color: #7891BF">Использование: </b>
+                    Желаемое действие, которое не произошло и уже поздно. "Haber" отодвигает возможность в прошлое.<br>
+                    <b style="color: #7891BF">Пример: <u>Deberíamos haber comprado</u> oro hace dos años.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Нам следовало купить золото (но мы не купили и уже поздно) два года назад.'''
+            },
+            'Puede haber': {
+                'Гипотеза о прошлом':
+                '''<b style="color: #7891BF">Использование: </b>
+                    Гипотеза о прошлом (низкий уровень уверенности). "Haber" отодвигает возможность в прошлое.<br>
+                    <b style="color: #7891BF">Пример: <u>Pueden haber cambiado</u> la clave y no nos han dicho nada.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    (Я не знаю причину, но одна из возможностей, что) они сменили пароль и (пока) не сообщили нам об этом.'''
+            },
+            'Debe haber': {
+                'Вывод о прошлом':
+                '''<b style="color: #7891BF">Использование: </b>
+                    Вывод о прошлом (высокий уровень уверенности). "Haber" отодвигает вывод на действие прошлого.<br>
+                    <b style="color: #7891BF">Пример: Debe haberse quedado dormido.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                     (Я почти уверен, что) он проспал.'''
+            }
         }
 
         filtered_conjugations = {}
