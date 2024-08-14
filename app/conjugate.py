@@ -654,7 +654,7 @@ class Conjugador:
                     Они спят.'''
             },
             'Preterito perfecto compuestas comunes': {
-                'Расширенное прошедшее время'
+                'Расширенное прошедшее время':
                 '''<b style="color: #7891BF">Использование: </b>
                      Факты и утверждения. Продолжающееся действие / Может повторяться / Пока нет, но ещё возможно.<br>
                     <b style="color: #7891BF">Примеры: </b>Ha llovido todo el día.<br>
@@ -824,7 +824,7 @@ class Conjugador:
                     Условие будет выполнено, после чего произойдет другое действие ("после того как").<br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    В сочетании с предложениями в будущем.
+                    В сочетании с предложениями в будущем.<br>
                     <b style="color: #7891BF">Пример: </b>Cuando <u>hayas terminado</u> el libro, entenderás el problema.<br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     После того, как закончишь книгу, ты (сразу) поймешь проблему.'''
@@ -926,7 +926,7 @@ class Conjugador:
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     В сочетании с предложениями о последствиях, которые не были выполнены в прошлом ("бы").<br>
-                    <b style="color: #7891BF">Примеры: Si ella me <u>hubiese dicho</u> que iba a venir con amigos, habría preparado más comida.<br>
+                    <b style="color: #7891BF">Примеры: </b>Si ella me <u>hubiese dicho</u> que iba a venir con amigos, habría preparado más comida.<br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     Если бы она сказала мне (но не сказала), что она собиралась прийти с друзьями, я бы приготовил больше еды (но не приготовил).<br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -964,7 +964,7 @@ class Conjugador:
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     В сочетании с предложениями в сослагательном наклонении (уже невозможно).<br>
-                    <b style="color: #7891BF">Пример: Si hubiésemos sabido cómo se comporta la gente aquí en año nuevo, <u>habríamos viajado</u> en otro momento.<br>
+                    <b style="color: #7891BF">Пример: </b>Si hubiésemos sabido cómo se comporta la gente aquí en año nuevo, <u>habríamos viajado</u> en otro momento.<br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     Если бы мы знали (но не знали), как люди ведут себя здесь в Новый год, мы бы путешествовали в другой момент (но мы уже здесь).'''
             },
@@ -972,7 +972,7 @@ class Conjugador:
                 'Условие "бы мог" в прошлом (так и не произошло)':
                 '''<b style="color: #7891BF">Использование: </b>
                     Действие, которое не произошло, но было возможно в прошлом. "Haber" отодвигает возможность в прошлое.<br>
-                    <b style="color: #7891BF">Пример: ¡Podrías haber incendiado la casa con tus experimentos!<br>
+                    <b style="color: #7891BF">Пример: </b>¡Podrías haber incendiado la casa con tus experimentos!<br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     Ты мог бы поджечь дом (но не поджёг и риск уже исчез) своими экспериментами!'''
             },
@@ -980,7 +980,7 @@ class Conjugador:
                 'Условие "бы следовало" (так и не произошло)':
                 '''<b style="color: #7891BF">Использование: </b>
                     Желаемое действие, которое не произошло и уже поздно. "Haber" отодвигает возможность в прошлое.<br>
-                    <b style="color: #7891BF">Пример: <u>Deberíamos haber comprado</u> oro hace dos años.<br>
+                    <b style="color: #7891BF">Пример: </b><u>Deberíamos haber comprado</u> oro hace dos años.<br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     Нам следовало купить золото (но мы не купили и уже поздно) два года назад.'''
             },
@@ -988,7 +988,7 @@ class Conjugador:
                 'Гипотеза о прошлом':
                 '''<b style="color: #7891BF">Использование: </b>
                     Гипотеза о прошлом (низкий уровень уверенности). "Haber" отодвигает возможность в прошлое.<br>
-                    <b style="color: #7891BF">Пример: <u>Pueden haber cambiado</u> la clave y no nos han dicho nada.<br>
+                    <b style="color: #7891BF">Пример: </b><u>Pueden haber cambiado</u> la clave y no nos han dicho nada.<br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     (Я не знаю причину, но одна из возможностей, что) они сменили пароль и (пока) не сообщили нам об этом.'''
             },
@@ -996,7 +996,7 @@ class Conjugador:
                 'Вывод о прошлом':
                 '''<b style="color: #7891BF">Использование: </b>
                     Вывод о прошлом (высокий уровень уверенности). "Haber" отодвигает вывод на действие прошлого.<br>
-                    <b style="color: #7891BF">Пример: Debe haberse quedado dormido.<br>
+                    <b style="color: #7891BF">Пример: </b>Debe haberse quedado dormido.<br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                      (Я почти уверен, что) он проспал.'''
             }
@@ -1005,10 +1005,19 @@ class Conjugador:
         filtered_conjugations = {}
 
         for tense, pronouns in conjugations.items():
-            rus_tense = esp_to_rus_dict.get(tense, tense)
-            filtered_conjugations[rus_tense] = {}
+            tense_data = esp_to_rus_dict.get(tense, {})
+            if isinstance(tense_data, dict):
+                rus_tense = list(tense_data.keys())[0]
+                placeholder_value = tense_data.get(rus_tense, 'Placeholder')
+            else:
+                rus_tense = tense
+                placeholder_value = 'Placeholder'
+            filtered_conjugations[rus_tense] = {
+                'conjugations': {},
+                'placeholder_value': placeholder_value
+            }
             for pronoun, conjugation in pronouns.items():
                 if pronoun.lower() not in accents:
-                    filtered_conjugations[rus_tense][pronoun] = conjugation
+                    filtered_conjugations[rus_tense]['conjugations'][pronoun] = conjugation
 
         return filtered_conjugations
