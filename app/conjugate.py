@@ -632,7 +632,7 @@ class Conjugador:
             'Presente indicativo': {
                 '1: Настоящее время<br>2: Условие "если"': 
                 '''<b style="color: #7891BF">Использование 1: </b>
-                    Факты и утверждения. Не для кроткосрочных процессов.<br>
+                    Факты и утверждения. Не для краткосрочных процессов.<br>
                     <b style="color: #7891BF">Пример: </b>El niño no come pescado.<br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     Ребёнок не ест рыбу (Никогда. Ему не нравится)<br><br>
@@ -648,7 +648,7 @@ class Conjugador:
             'Presente con Estar': {
                 'Краткосрочный и/или постоянный процесс в настоящем времени':
                 '''<b style="color: #7891BF">Использование: </b>
-                    Факты и утверждения. Для кроткосрочных и постоянных процессов в настоящем времени.<br>
+                    Факты и утверждения. Для краткосрочных и постоянных процессов в настоящем времени.<br>
                     <b style="color: #7891BF">Пример: </b>Están durmiendo.<br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     Они спят.'''
@@ -656,7 +656,7 @@ class Conjugador:
             'Preterito perfecto compuestas comunes': {
                 'Расширенное прошедшее время':
                 '''<b style="color: #7891BF">Использование: </b>
-                     Факты и утверждения. Продолжающееся действие / Может повторяться / Пока нет, но ещё возможно.<br>
+                    Факты и утверждения. Продолжающееся действие / Может повторяться / Пока нет, но ещё возможно.<br>
                     <b style="color: #7891BF">Примеры: </b>Ha llovido todo el día.<br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     Весь день шёл дождь (и всё ещё идёт).<br>
@@ -695,7 +695,7 @@ class Conjugador:
             },
             'Pasado continuo': {
                 'Процесс в прошлом':
-                '''<b style="color: #7891BF">Использование 1: </b>
+                '''<b style="color: #7891BF">Использование: </b>
                     Факты и утверждения. Описание краткосрочного процесса, во время момента в прошлом.<br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -706,7 +706,7 @@ class Conjugador:
             },
             'Pluscuamperfecto compuestas comunes': {
                 'Действие завершилось до другого момента в прошлом':
-                '''<b style="color: #7891BF">Использование 1: </b>
+                '''<b style="color: #7891BF">Использование: </b>
                     Факты и утверждения. Действие завершилось до другого момента в прошлом.<br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -717,7 +717,7 @@ class Conjugador:
             },
             'Preterito anterior indicativo': {
                 'Процесс завершился как условие для другого действия':
-                '''<b style="color: #7891BF">Использование 1: </b>
+                '''<b style="color: #7891BF">Использование: </b>
                     Факты и утверждения. Условие завершилось и затем последовало другое действие ("После того как").<br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -728,7 +728,7 @@ class Conjugador:
             },
             'Pluscuamperfecto continuo': {
                 'Краткосрочный процесс до другого момента в прошлом':
-                '''<b style="color: #7891BF">Использование 1: </b>
+                '''<b style="color: #7891BF">Использование: </b>
                     Факты и утверждения. Краткосрочный и постоянный процесс до другого момента в прошлом.<br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -819,15 +819,27 @@ class Conjugador:
                     (Я не понимаю, почему он ведёт себя так) Возможно, он грустный?'''
             },
             'Preterito perfecto compuestos del subjuntivo': {
-                'Процесс будет завершён как условие для другого действя':
-                '''<b style="color: #7891BF">Использование: </b>
-                    Условие будет выполнено, после чего произойдет другое действие ("после того как").<br>
+                '1: Процесс будет завершён как условие для другого действия<br>2: Сослагательное наклонение 1 ограничено прошлым':
+                '''<b style="color: #7891BF">Использование 1: </b>
+                    Обещания и предсказания. Условие будет завершено, за которым следует другое действие ("после того как")<br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     В сочетании с предложениями в будущем.<br>
                     <b style="color: #7891BF">Пример: </b>Cuando <u>hayas terminado</u> el libro, entenderás el problema.<br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    После того, как закончишь книгу, ты (сразу) поймешь проблему.'''
+                    После того, как закончишь книгу, ты (сразу) поймешь проблему.<br><br>
+                    <b style="color: #7891BF">Использование 2: </b> 
+                    Придаточное предложение после "чтобы" или "что" ограничено прошлым.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    В сочетание с предложениями в настоящем времени или в прошедшем времени совершённого вида.<br>
+                    <b style="color: #7891BF">Примеры: </b>Los documentos no demuestran que <u>haya vivido</u> en otro país.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Документы не доказывают (сейчас), что он проживал (раньше) в другой стране.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    No creo que se <u>haya levantado</u>.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Я не думаю (сейчас), что он (уже, раньше) встал.'''
             },
             'Futuro perfecto compuestas comunes': {
                 '1: Действие будет завершено до другого момента в будущем<br>2: Гипотеза о прошлом':
