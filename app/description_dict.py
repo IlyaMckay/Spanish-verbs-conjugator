@@ -8,7 +8,7 @@ description = {'Presente indicativo': {
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     Ребёнок не ест рыбу (Никогда. Ему не нравится)<br><br>
                     <b style="color: #7891BF">Использование 2: </b> 
-                    Вероятное и возможное условие, в настоящем времени и в будущем.<br>
+                    Вероятное и возможное условие, в настоящем времени и в будущем ("если").<br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     В сочетании с предложениями в настоящем времени или в будущем.<br>
@@ -17,7 +17,7 @@ description = {'Presente indicativo': {
                     Если завтра <u>будет</u> дождь, я останусь дома.'''
             },
             'Presente con Estar': {
-                'Краткосрочный и/или постоянный процесс в настоящем времени':
+                'Краткосрочный и постоянный процесс в настоящем времени':
                 '''<b style="color: #7891BF">Использование: </b>
                     Факты и утверждения. Для краткосрочных и постоянных процессов в настоящем времени.<br>
                     <b style="color: #7891BF">Пример: </b>Están durmiendo.<br>
@@ -34,7 +34,7 @@ description = {'Presente indicativo': {
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     Me ha llamado cinco veces hoy.<br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    Сегодня она звонила мне пять раз (и может позвонить снова).<br>
+                    Сегодня он/она звонила мне пять раз (и может позвонить снова).<br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     No hemos tenido problemas con este ascensor.<br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -60,6 +60,7 @@ description = {'Presente indicativo': {
                 'Прошедшее время несовершённого вида':
                 '''<b style="color: #7891BF">Использование: </b>
                     Факты и утверждения. Описание части действия или обычай в прошлом.<br>
+                    <b style="color: #7891BF">Структура: </b>Корень + aba/ía.<br>
                     <b style="color: #7891BF">Пример: </b>Yo <u>jugaba</u> en este parque cuando era niño.<br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     Я играл в этом парке когда был ребёнком.'''
@@ -82,14 +83,14 @@ description = {'Presente indicativo': {
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     В сочетании с предложениями в прошедшем времени совершённого вида.<br>
-                    <b style="color: #7891BF">Пример: </b>Ya habían inventado el teléfono cuando se popularizó la radio.<br>
+                    <b style="color: #7891BF">Пример: </b>Ya habían inventado el ascensor cuando construyeron estos edificios.<br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    Телефон уже был изобретен, когда радио стало популярным.<br>'''
+                    Лифт уже был изобретен когда строили эти здания.<br>'''
             },
             'Preterito anterior indicativo': {
                 'Процесс завершился как условие для другого действия':
                 '''<b style="color: #7891BF">Использование: </b>
-                    Факты и утверждения. Условие завершилось и затем последовало другое действие ("После того как").<br>
+                    Факты и утверждения. Условие завершилось и затем последовало другое действие ("после того как").<br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     В сочетании с предложениями в прошедшем времени совершённого вида.<br>
@@ -156,17 +157,17 @@ description = {'Presente indicativo': {
                     Давайте не будем спорить.'''
             },
             'Futuro con Ir a': {
-                '1: Будущее время (наиболее распространённая форма)<br>2: Недоверие о настоящем времени или о будущем':
+                '1: Будущее время (с вспомогательным глаголом)<br>2: Недоверие о настоящем времени или о будущем':
                 '''<b style="color: #7891BF">Использование 1: </b>
                     Обещания и предсказания. Будущее время (наиболее распространённая форма).<br>
                     <b style="color: #7891BF">Пример: </b>Voy a comprar frutas.<br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    Я куплю фрукты (Я собираюсь купить фрукты).<br><br>
+                    Я куплю фрукты (я собираюсь купить фрукты).<br><br>
                     <b style="color: #7891BF">Использование 2: </b> 
                     Удивление, недоверие, неодобрение или замешательство о настоящем времени или о будущем.<br>
                     <b style="color: #7891BF">Примеры: </b>¿Cómo vas a hacer algo tan insensato?<br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    Как ты собираешься сделать что-то настолько безрассудное?
+                    Как ты можешь совершить такой безрассудный поступок?
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     ¡Qué va a ser millonario! ¡Es mitómano!<br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -231,7 +232,7 @@ description = {'Presente indicativo': {
             'Futuro perfecto con Ir a': {
                 '1: Действие будет завершено до другого момента в будущем<br>2: Недоверие о прошлом':
                 '''<b style="color: #7891BF">Использование 1: </b>
-                    Обещания и предсказания. Действие будет завершено до другого момента в будущем (неформальное).<br>
+                    Обещания и предсказания. Действие будет завершено до другого момента в будущем.<br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     В сочетании с предложениями "когда" о будущем.<br>
@@ -240,9 +241,9 @@ description = {'Presente indicativo': {
                     Когда ты придёшь (сюда), я (уже) всё приготовлю (но я ещё не приготовил).<br><br>
                     <b style="color: #7891BF">Использование 2: </b> 
                     Удивление, недоверие, неодобрение или замешательство о прошлом.<br>
-                    <b style="color: #7891BF">Пример: </b>Qué van a haber estado en la luna!<br>
+                    <b style="color: #7891BF">Пример: </b>¿Qué van a haber dicho ellos en esa reunión?<br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    Они, должно быть, были на Луне!'''
+                    Что они там могли сказать на этой встрече?'''
             },
             'Presente subjuntivo': {
                 'Сослагательное наклонение 1':
@@ -253,13 +254,13 @@ description = {'Presente indicativo': {
                     В сочетании с предложениями в настоящем или будущем времени.<br>
                     <b style="color: #7891BF">Пример: </b>Ella quiere que la <u>ayudemos</u>.<br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    Она хочет, чтобы мы ей помогли.<br>
+                    Она хочет (сейчас), чтобы мы ей помогли (когда-нибудь).<br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    Espero que <u>puedas</u>.
+                    No creo que él se dé cuenta.<br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    Надеюсь, что ты сможешь.<br><br>
+                    Я не думаю (сейчас), что он когда-либо заметит.<br><br>
                     <b style="color: #7891BF">Использование 2: </b> 
-                    "Когда" (о будущем).<br>
+                    Обещания и предсказания. Условие в будущем. "Когда".<br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     В сочетании с предложениями в будущем времени или в повелительном наклонении.<br>
@@ -279,6 +280,7 @@ description = {'Presente indicativo': {
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     В сочетании с предложениями в прошедшем времени.<br>
+                    <b style="color: #7891BF">Структура: </b>Корень + ase|ara/iese|iera.<br>
                     <b style="color: #7891BF">Пример: </b>Ella nos pidió que la <u>ayudásemos</u>.<br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     Она попросила нас, чтобы мы ей помогли.<br><br>
@@ -298,6 +300,7 @@ description = {'Presente indicativo': {
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     В сочетании с предложениями в будущем.<br>
+                    <b style="color: #7891BF">Структура: </b>Корень + are/iere.<br>
                     <b style="color: #7891BF">Пример: </b>Si el proveedor no <u>entregare</u> el producto dentro de los tres días habiles, la empresa podrá rescindir el contrato.<br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     Если поставщик не доставит товар в течение трёх рабочих дней, компания сможет расторгнуть договор.'''
@@ -318,12 +321,13 @@ description = {'Presente indicativo': {
                     Если бы моя бабушка не умерла (но она умерла), она была бы жива.'''
             },
             'Condicional indicativo': {
-                '1: Условие "бы"<br>2: Предсказание в прошлом':
+                '1: Следствие маловероятных условий "бы"<br>2: Предсказание в прошлом':
                 '''<b style="color: #7891BF">Использование 1: </b>
                     Последствие если условие выполняется. Совет.<br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     В сочетании с предложениями в сослагательном наклонении 2.<br>
+                    <b style="color: #7891BF">Структура: </b>Инфинитив + ía.<br>
                     <b style="color: #7891BF">Примеры: </b>Si tuviese mis herramientas aquí lo <u>repararía</u>.<br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     Если бы у меня были здесь инструменты, я бы его починил.<br>
@@ -341,7 +345,7 @@ description = {'Presente indicativo': {
                     Я думал, что <u>будет</u> сложнее.'''
             },
             'Condicional perfecto compuestas comunes': {
-                'Условие "бы" в прошлом (так и не произошло)':
+                'Следствие невыполненного условия в прошлом "бы"':
                 '''<b style="color: #7891BF">Использование: </b>
                     Последствие, которое не было выполнено в прошлом и уже невозможно. "Haber" отодвигает последствие в прошлое.<br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -352,7 +356,7 @@ description = {'Presente indicativo': {
                     Если бы мы знали (но не знали), как люди ведут себя здесь в Новый год, мы бы путешествовали в другой момент (но мы уже здесь).'''
             },
             'Podria haber': {
-                'Условие "бы мог" в прошлом (так и не произошло)':
+                'Возможность ограничена прошлым "мог бы"':
                 '''<b style="color: #7891BF">Использование: </b>
                     Действие, которое не произошло, но было возможно в прошлом. "Haber" отодвигает возможность в прошлое.<br>
                     <b style="color: #7891BF">Пример: </b>¡Podrías haber incendiado la casa con tus experimentos!<br>
@@ -360,20 +364,25 @@ description = {'Presente indicativo': {
                     Ты мог бы поджечь дом (но не поджёг и риск уже исчез) своими экспериментами!'''
             },
             'Deberia haber': {
-                'Условие "бы следовало" (так и не произошло)':
+                'Желательное поведение ограничено прошлым "следовало бы"':
                 '''<b style="color: #7891BF">Использование: </b>
-                    Желаемое действие, которое не произошло и уже поздно. "Haber" отодвигает возможность в прошлое.<br>
+                    Желаемое действие, которое не произошло и уже поздно.<br>
                     <b style="color: #7891BF">Пример: </b><u>Deberíamos haber comprado</u> oro hace dos años.<br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     Нам следовало купить золото (но мы не купили и уже поздно) два года назад.'''
             },
             'Puede haber': {
-                'Гипотеза о прошлом':
-                '''<b style="color: #7891BF">Использование: </b>
-                    Гипотеза о прошлом (низкий уровень уверенности). "Haber" отодвигает возможность в прошлое.<br>
+                '1: Гипотеза о прошлом<br>2: (Отрицательное) утверждение о невозможности в прошлом':
+                '''<b style="color: #7891BF">Использование 1: </b>
+                    Гипотеза о прошлом (низкий уровень уверенности). С "haber" гипотеза ограничена прошлым событием.<br>
                     <b style="color: #7891BF">Пример: </b><u>Pueden haber cambiado</u> la clave y no nos han dicho nada.<br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    (Я не знаю причину, но одна из возможностей, что) они сменили пароль и (пока) не сообщили нам об этом.'''
+                    (Я не знаю причину, но одна из возможностей, что) они сменили пароль и (пока) не сообщили нам об этом.<br><br>
+                    <b style="color: #7891BF">Использование 2: </b> 
+                    Утверждение о невозможности в прошлом (только в отрицательных предложениях)<br>
+                    <b style="color: #7891BF">Пример: Yo <u>no puedo haber asesinado</u> al mayordomo pues a esa hora me encontraba en el teatro.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Я не мог убить дворецкого (это невозможный факт в прошлом), так как в это время я был в театре.'''
             },
             'Debe haber': {
                 'Вывод о прошлом':
