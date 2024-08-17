@@ -241,9 +241,9 @@ description = {'Presente indicativo': {
                     Когда ты придёшь (сюда), я (уже) всё приготовлю (но я ещё не приготовил).<br><br>
                     <b style="color: #7891BF">Использование 2: </b> 
                     Удивление, недоверие, неодобрение или замешательство о прошлом.<br>
-                    <b style="color: #7891BF">Пример: </b>¿Qué van a haber dicho ellos en esa reunión?<br>
+                    <b style="color: #7891BF">Пример: </b>¿Qué se va a haber recibido en MGU?<br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    Что они там могли сказать на этой встрече?'''
+                    Да какой МГУ он закончил?!'''
             },
             'Presente subjuntivo': {
                 'Сослагательное наклонение 1':
@@ -390,7 +390,7 @@ description = {'Presente indicativo': {
                     Вывод о прошлом (высокий уровень уверенности). "Haber" отодвигает вывод на действие прошлого.<br>
                     <b style="color: #7891BF">Пример: </b>Debe haberse quedado dormido.<br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                     (Я почти уверен, что) он проспал.'''
+                    (Я почти уверен, что) он проспал.'''
             }
         }
 
