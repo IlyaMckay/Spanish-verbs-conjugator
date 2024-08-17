@@ -380,7 +380,7 @@ description = {'Presente indicativo': {
                     (Я не знаю причину, но одна из возможностей, что) они сменили пароль и (пока) не сообщили нам об этом.<br><br>
                     <b style="color: #7891BF">Использование 2: </b> 
                     Утверждение о невозможности в прошлом (только в отрицательных предложениях)<br>
-                    <b style="color: #7891BF">Пример: Yo <u>no puedo haber asesinado</u> al mayordomo pues a esa hora me encontraba en el teatro.<br>
+                    <b style="color: #7891BF">Пример: </b>Yo <u>no puedo haber asesinado</u> al mayordomo pues a esa hora me encontraba en el teatro.<br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     Я не мог убить дворецкого (это невозможный факт в прошлом), так как в это время я был в театре.'''
             },
