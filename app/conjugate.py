@@ -638,17 +638,17 @@ class Conjugador:
             if isinstance(tense_data, dict):
                 rus_tense = list(tense_data.keys())[0]
                 tense_info = tense_data[rus_tense]
-                placeholder_key = tense_info.keys()
-                placeholder_value = tense_info.values()
+                descriptions_key = tense_info.keys()
+                descriptions_value = tense_info.values()
             else:
                 rus_tense = tense
-                placeholder_key = 'Key placeholder'
-                placeholder_value = 'Value placeholder'
+                descriptions_key = 'Key placeholder'
+                descriptions_value = 'Value placeholder'
 
             filtered_conjugations[rus_tense] = {
                 'conjugations': {},
-                'placeholders': {
-                    key: value for key, value in zip(placeholder_key, placeholder_value)
+                'descriptions': {
+                    key: value for key, value in zip(descriptions_key, descriptions_value)
                 }
             }
 
