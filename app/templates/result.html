@@ -23,17 +23,15 @@
                         {% endfor %}
                     </table>
                 </div>
-                <div class="table-column">
-                    <div class="placeholder">
+                <div class="table-column-description">
                     <table>
-                        {% for key, value in data['placeholders'].items() %}
+                        {% for key, value in data['descriptions'].items() %}
                         <tr>
-                            <td style="background-color: transparent; color: #7891BF; font-weight: bold;">{{ key | safe }}</td>
-                            <td style="background-color: transparent; color: #F5F5F5; font-weight: bold;">{{ value | safe }}</td>
+                            <td class="key">{{ key | safe }}</td>
+                            <td class="value">{{ value | safe }}</td>
                         </tr>
                         {% endfor %}
                     </table>
-                    </div>
                 </div>
             </div>
         </div>
