@@ -27,7 +27,7 @@ body {
 
 .tense-container h2 {
   color: #F5F5F5;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 /* Tables Container Styles */
@@ -90,14 +90,34 @@ td {
   /* box-shadow: 1px 1px 3px #ffaf72; */
 }
 
-.placeholder {
-  text-align: left;
+.table-column-description {
+  flex: 1;
+  padding: 5px;
+  margin: 5px;
+  min-width: 280px;
   background-color: #FFAE72;
-  color:  #F5F5F5;
+  color: #F5F5F5;
   font-weight: bold;
   border-top-left-radius: 15px;
   border-bottom-right-radius: 25px;
   filter: drop-shadow(0.1px 0.1px 0.5px #2A55A6);
+}
+
+.table-column-description td.key {
+  padding-right: 1px;
+  background-color: transparent;
+  width: 160px;
+  color: #7891BF;
+  text-indent: 2px;
+  text-align: right;
+  vertical-align: top;
+}
+
+.table-column-description td.value {
+  padding-left: 1px;
+  background-color: transparent;
+  color: #F5F5F5;
+  font-weight: bold;
 }
 
 /* Form Styles */
@@ -183,6 +203,11 @@ a:hover {
   }
 
   .table-column {
+    margin: 0 auto 10px; /* Center tables and add spacing */
+    min-width: 100%; /* Ensure full width for each column */
+  }
+  
+  .table-column-description {
     margin: 0 auto 10px; /* Center tables and add spacing */
     min-width: 100%; /* Ensure full width for each column */
   }
