@@ -634,16 +634,24 @@ class Conjugador:
 
         for tense, pronouns in conjugations.items():
             tense_data = description.get(tense, {})
+            
             if isinstance(tense_data, dict):
                 rus_tense = list(tense_data.keys())[0]
-                placeholder_value = tense_data.get(rus_tense, 'Placeholder')
+                tense_info = tense_data[rus_tense]
+                placeholder_key = tense_info.keys()
+                placeholder_value = tense_info.values()
             else:
                 rus_tense = tense
-                placeholder_value = 'Placeholder'
+                placeholder_key = 'Key placeholder'
+                placeholder_value = 'Value placeholder'
+
             filtered_conjugations[rus_tense] = {
                 'conjugations': {},
-                'placeholder_value': placeholder_value
+                'placeholders': {
+                    key: value for key, value in zip(placeholder_key, placeholder_value)
+                }
             }
+
             for pronoun, conjugation in pronouns.items():
                 if pronoun.lower() not in accents:
                     filtered_conjugations[rus_tense]['conjugations'][pronoun] = conjugation
