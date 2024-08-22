@@ -24,11 +24,16 @@
                     </table>
                 </div>
                 <div class="table-column">
+                    <div class="placeholder">
                     <table>
+                        {% for key, value in data['placeholders'].items() %}
                         <tr>
-                            <td class="placeholder">{{ data['placeholder_value'] | safe }}</td>
+                            <td style="background-color: transparent; color: #7891BF; font-weight: bold;">{{ key | safe }}</td>
+                            <td style="background-color: transparent; color: #F5F5F5; font-weight: bold;">{{ value | safe }}</td>
                         </tr>
+                        {% endfor %}
                     </table>
+                    </div>
                 </div>
             </div>
         </div>
