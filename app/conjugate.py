@@ -1,12 +1,19 @@
-from bs4 import BeautifulSoup
 from app.description_dict import description
-import requests
+from app.dao.http import get_site
+import re
+import json
 
 
 class Conjugador:
     """
     A class used to parse and conjugate Spanish verbs.
     """
+    REGIONS = {
+        'argentina': ['tú', 'vosotros, vosotras'],
+        'espana': ['vos'],
+        'mexico': ['vos', 'vosotros, vosotras']
+    }
+
     ESTAR = {
         'Indicativo': {
             'Presente': {'Yo': 'Estoy', 'Tú': 'Estás', 'Vos': 'Estás', 'Él, Ella, Usted': 'Está', 'Nosotros, Nosotras': 'Estamos', 'Vosotros, Vosotras': 'Estáis', 'Ellos, Ellas, Ustedes': 'Están'},
@@ -47,7 +54,7 @@ class Conjugador:
         """
         self.verb = verb.strip()
         self.url = f'https://www.wordreference.com/conj/esverbs.aspx?v={self.verb}'
-        self.parsed_html = self.get_site()
+        self.parsed_html = get_site(self)
         self.parsed_igp = self.parse_infinitivo_gerundio_participio()
         self.infinitivo, self.gerundio, self.participio = self.process_infinitivo_gerundio_participio()
         self.parsed_dictionary = self.scrape_spanish_conjugations()
@@ -55,22 +62,6 @@ class Conjugador:
         self.exceptions = [
             'haber', 'costar', 'valer', 'doler', 'dolerse', 'gustar', 'interesar', 'encantar', 'desagradar'
         ]
-
-    def get_site(self):
-        """
-        Send an HTTP request to the specified URL and return the parsed HTML content.
-
-        :return: Parsed HTML content of the webpage.
-        :raises RuntimeError: If the webpage could not be retrieved.
-        """
-        response = requests.get(self.url)
-
-        if response.status_code == 200:
-            parsed_html = BeautifulSoup(response.text, 'html.parser')
-
-            return parsed_html
-        else:
-            raise RuntimeError("Failed to retrieve the webpage.")
 
     def parse_infinitivo_gerundio_participio(self):
         """
@@ -614,8 +605,6 @@ class Conjugador:
 
         return final_dict
 
-    
-
 
     @staticmethod
     def filter_conjugations(conjugations, accents):
@@ -657,3 +646,8 @@ class Conjugador:
                     filtered_conjugations[rus_tense]['conjugations'][pronoun] = conjugation
 
         return filtered_conjugations
+
+    @staticmethod
+    def is_spanish_verb(word):
+        if not re.match(r'^[a-zñáéíóúü]+$', word, re.IGNORECASE):
+            raise ValueError("Invalid word. Please enter a valid Spanish verb.")

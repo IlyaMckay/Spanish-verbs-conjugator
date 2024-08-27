@@ -43,4 +43,4 @@ def close_connection(exception):
     if db is not None:
         db.close()
 
-from app import routes
+from app.api import routes, error_handlers
