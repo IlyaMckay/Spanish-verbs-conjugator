@@ -4,7 +4,7 @@ from tinydb import TinyDB
 
 app = Flask(__name__)
 
-# Initialize the path to the database
+
 db_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'database')
 if not os.path.exists(db_dir):
     os.makedirs(db_dir)
