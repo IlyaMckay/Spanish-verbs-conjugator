@@ -3,8 +3,9 @@ import os
 
 
 current_dir = os.path.dirname(os.path.abspath(__file__))
-parent_dir = current_dir[:current_dir.rfind('\\')]
-sys.path.append(parent_dir)
+parent_dir = os.path.abspath(os.path.join(current_dir, '..'))
+root_dir = os.path.abspath(os.path.join(parent_dir, '..'))
+sys.path.append(root_dir)
 
 
 import bisect
@@ -27,6 +28,7 @@ def normalize_word(word):
     """
     return word.lower().replace('í', 'i').replace('ñ', 'n').replace('ó', 'o').replace('ú', 'u')
 
+
 def find_in_sorted_list(sorted_list, item):
     """
     Finds the index of an item in a sorted list using binary search.
@@ -42,6 +44,7 @@ def find_in_sorted_list(sorted_list, item):
     if index < len(sorted_list) and sorted_list[index] == item:
         return index
     return -1
+
 
 def populate_db(verb):
     """
@@ -132,4 +135,4 @@ def show_first_five_records():
         print()
 
 # if __name__ == '__main__':
-#     print(get_verb('bromear'))
+#     print(get_verb('soñar'))
