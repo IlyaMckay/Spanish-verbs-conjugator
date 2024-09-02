@@ -1,7 +1,6 @@
 from app.description_dict import description
-from app.dao.http import get_site
+from app.dao.http_request import get_site
 import re
-import json
 
 
 class Conjugador:
@@ -60,7 +59,7 @@ class Conjugador:
         self.parsed_dictionary = self.scrape_spanish_conjugations()
         self.new_dictionary = self.new_conjugations()
         self.exceptions = [
-            'haber', 'costar', 'valer', 'doler', 'dolerse', 'gustar', 'interesar', 'encantar', 'desagradar'
+            'haber', 'costar', 'valer', 'doler', 'dolerse', 'gustar', 'interesar', 'encantar', 'desagradar', 'poder', 'deber'
         ]
 
     def parse_infinitivo_gerundio_participio(self):
