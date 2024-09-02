@@ -245,6 +245,9 @@ class Conjugador:
                     conjugation = self.remove_after_last_o(
                         header, tense, conjugation)
 
+                    if pronoun_text in conjugations[header][tense]:
+                        continue
+
                     conjugations[header][tense][pronoun_text] = conjugation
 
         conjugations = self.reorder_pronouns(conjugations)
