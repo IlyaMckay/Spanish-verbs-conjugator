@@ -28,7 +28,6 @@ def normalize_word(word):
     """
     return word.lower().replace('í', 'i').replace('ñ', 'n').replace('ó', 'o').replace('ú', 'u')
 
-
 def find_in_sorted_list(sorted_list, item):
     """
     Finds the index of an item in a sorted list using binary search.
@@ -45,11 +44,10 @@ def find_in_sorted_list(sorted_list, item):
         return index
     return -1
 
-
 def populate_db(verb):
     """
     Adds a verb to the TinyDB database if it does not already exist.
-
+    
     Args:
         verb (str): The infinitive form of the verb to be added.
     """
@@ -63,23 +61,16 @@ def populate_db(verb):
 
     new_entry = {'verb': verb, 'conjugations': final_dict}
 
-    sorted_entries = sorted(verbs_table.all(), key=lambda x: x['verb'])
-
-    keys = [entry['verb'] for entry in sorted_entries]
-    position = find_in_sorted_list(keys, new_entry['verb'])
-
-    if position != -1:
+    if verbs_table.contains(Query().verb == verb):
         print(f"Verb '{verb}' already exists in the database.")
         return
 
     verbs_table.insert(new_entry)
     print(f"Verb '{verb}' has been added to the database.")
 
-
 def get_verb(verb):
     """
-    Retrieves a verb entry from the TinyDB database by first checking the exact match,
-    and if not found, normalizing the keys in the database and trying again.
+    Retrieves a verb entry from the TinyDB database by normalizing the keys in the database.
 
     Args:
         verb (str): The infinitive form of the verb to retrieve.
@@ -106,7 +97,6 @@ def get_verb(verb):
 
     return None
 
-
 def truncate_all_tables():
     """
     Deletes all records from all tables in the TinyDB database.
@@ -116,7 +106,6 @@ def truncate_all_tables():
 
     for table_name in db.tables():
         db.table(table_name).truncate()
-
 
 def show_first_five_records():
     """
@@ -134,5 +123,25 @@ def show_first_five_records():
             print(record)
         print()
 
-# if __name__ == '__main__':
-#     print(get_verb('soñar'))
+def delete_records(verbs):
+    """
+    Deletes records from the TinyDB database based on a list of verbs.
+
+    Args:
+        verbs (list of str): List of verbs to delete from the database.
+    """
+    db_path = app.config['DATABASE']
+    db = TinyDB(db_path)
+    Verb = Query()
+
+    for verb in verbs:
+        db.table('verbs').remove(Verb.verb == verb)
+
+
+# if __name__ == "__main__":
+#     words_to_delete = ['sonar', 'soñar', 'acunar', 'acuñar', 'poder', 'deber']
+#     delete_records(words_to_delete)
+#     # show_first_five_records()
+#     for word in words_to_delete:
+#         populate_db(word)
+#         print(get_verb(word))

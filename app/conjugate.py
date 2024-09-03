@@ -59,7 +59,8 @@ class Conjugador:
         self.parsed_dictionary = self.scrape_spanish_conjugations()
         self.new_dictionary = self.new_conjugations()
         self.exceptions = [
-            'haber', 'costar', 'valer', 'doler', 'dolerse', 'gustar', 'interesar', 'encantar', 'desagradar', 'poder', 'deber'
+            'haber', 'costar', 'valer', 'doler', 'dolerse', 'gustar', 'interesar', 'encantar', 'desagradar', 'poder', 
+            'deber', 'holgar', 'urgir', 'atañer', 'acaecer', 'ocurrir', 'acontecer', 'incumbir'
         ]
 
     def parse_infinitivo_gerundio_participio(self):
