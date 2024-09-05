@@ -378,20 +378,12 @@ class Conjugador:
         :param tense_data: The data containing the conjugations for the specified tense.
         :param participio: The participio form of the verb.
         """
-        replacements = {
-            'Yo': 'o me',
-            'Tú': 'o te',
-            'Vos': 'o te',
-            'Él, Ella, Usted': 'o se',
-            'Nosotros, Nosotras': 'o nos',
-            'Vosotros, Vosotras': 'u os',
-            'Ellos, Ellas, Ustedes': 'o se'
-        }
+        
         for pronoun, conjugation in tense_data.items():
             haber_form = self.change_haber_form(pronoun)
             if self.verb.endswith('se'):
                 conjugations[pronoun] = \
-                    f"{conjugation} a {haber_form} {participio} {replacements[pronoun]} {conjugation.lower()} a haber {participio}"
+                    f"{conjugation} a {haber_form} {participio}"
             else:
                 conjugations[pronoun] = f"{conjugation} a haber {participio}"
 
@@ -404,20 +396,12 @@ class Conjugador:
         :param tense_data: The data containing the conjugations for the specified tense.
         :param participio: The participio form of the verb.
         """
-        replacements = {
-            'Yo': 'o me',
-            'Tú': 'o te',
-            'Vos': 'o te',
-            'Él, Ella, Usted': 'o se',
-            'Nosotros, Nosotras': 'o nos',
-            'Vosotros, Vosotras': 'u os',
-            'Ellos, Ellas, Ustedes': 'o se'
-        }
+        
         for pronoun, conjugation in tense_data.items():
             haber_form = self.change_haber_form(pronoun)
             if self.verb.endswith('se'):
                 conjugations[pronoun] = \
-                    f"{conjugation} {haber_form} {participio} {replacements[pronoun]} {conjugation.lower()} haber {participio}"
+                    f"{conjugation} {haber_form} {participio}"
             else:
                 conjugations[pronoun] = f"{conjugation} haber {participio}"
 
