@@ -30,7 +30,7 @@ with open(final_list_path, 'w', encoding='utf-8') as final_list, \
 
     for verb in verbs:
         verbse = verb + 'se'
-        print(verbse)
+        # print(verbse)
         try:
             if verb != 'embaír':
                 conjugator = Conjugador(verbse)
