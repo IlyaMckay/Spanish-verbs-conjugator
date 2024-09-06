@@ -140,7 +140,7 @@ def delete_records(verbs):
         db.table('verbs').remove(Verb.verb == verb)
 
 
-if __name__ == "__main__":
+# if __name__ == "__main__":
     # truncate_all_tables()
 
     # import os
