@@ -16,8 +16,12 @@ description = [
         { p = 'Предложениями в настоящем времени или в будущем.' }
     ]],
     ['Пример', [
-        { p = 'Si llueve mañana, me quedaré en casa.' },
-        { p = 'Если завтра будет дождь, я останусь дома.' }
+        { p = 'Si' },
+        { u = 'llueve' },
+        { r = 'mañana, me quedaré en casa.' },
+        { p = 'Если завтра' },
+        { u = 'будет' },
+        { r = 'дождь, я останусь дома.' }
     ]]
 ]
 
@@ -39,7 +43,7 @@ title = ['Расширенное прошедшее время']
 description = [
     ['Использование:', [
         { p = 'Факты и утверждения.' },
-        { p =  'Продолжающееся действие/Может повторяться/Пока нет, но ещё возможно.' }
+        { p = 'Продолжающееся действие/Может повторяться/Пока нет, но ещё возможно.' }
     ]],
     ['Примеры:', [
         { p = 'Ha llovido todo el día.' },
@@ -80,15 +84,17 @@ description = [
 ['Imperfecto indicativo']
 title = ['Прошедшее время несовершенного вида']
 description = [
+    ['Схема:', [
+        { p = 'Корень + "aba"/"ía".' }
+    ]],
     ['Использование:', [
         { p = 'Факты и утверждения.' },
         { p = 'Описание части действия или обычай в прошлом.' }
     ]],
-    ['Схема:', [
-        { p = 'Корень + "aba"/"ía".' }
-    ]],
     ['Пример:', [
-        { p = 'Yo <u>jugaba</u> en este parque cuando era niño.' },
+        { p = 'Yo' },
+        { u = 'jugaba' },
+        { r = 'en este parque cuando era niño.' },
         { p = 'Я играл в этом парке когда был ребёнком.' }
     ]]
 ]
@@ -104,7 +110,9 @@ description = [
         { p = 'Предложениями в прошедшем времени совершенного вида.' }
     ]],
     ['Пример:', [
-        { p = '<u>Estábamos comiendo</u> cuando sonó la alarma.' },
+        { p = '' },
+        { u = 'Estábamos comiendo' },
+        { r = 'cuando sonó la alarma.' },
         { p = 'Мы ели, когда сработала сигнализация.' }
     ]]
 ]
@@ -120,7 +128,7 @@ description = [
         { p = 'Предложениями в прошедшем времени совершенного вида.' }
     ]],
     ['Пример:', [
-        { p = 'Ya <u>habían inventado</u> el ascensor cuando construyeron estos edificios.' },
+        { p = 'Ya habían inventado el ascensor cuando construyeron estos edificios.' },
         { p = 'Лифт уже был изобретен когда строили эти здания.' }
     ]]
 ]
@@ -136,7 +144,9 @@ description = [
         { p = 'Предложениями в прошедшем времени совершенного вида.' }
     ]],
     ['Пример:', [
-        { p = 'Cuando <u>hube terminado</u> el trabajo, me pagaron.' },
+        { p = 'Cuando' },
+        { u = 'hube terminado' },
+        { r = 'el trabajo, me pagaron.' },
         { p = 'После того, как я закончил работу, они мне заплатили.' }
     ]]
 ]
@@ -152,8 +162,10 @@ description = [
         { p = 'Предложениями в прошедшем времени совершенного вида.' }
     ]],
     ['Пример:', [
-        { p = 'Yo <u>había estado leyendo</u> sobre canguros cuando me ofrecieron viajar a Australia.' },
-        { p = 'Я <u>был занят чтением</u> о кенгуру, когда мне предложили поехать в Австралию.' }
+        { p = 'Yo' }, 
+        { u = 'había estado leyendo' },
+        { r = 'sobre canguros cuando me ofrecieron viajar a Australia.' },
+        { p = 'Я был занят чтением о кенгуру, когда мне предложили поехать в Австралию.' }
     ]]
 ]
 
@@ -168,7 +180,9 @@ description = [
         { p = 'Предложениями в прошедшем времени.' }
     ]],
     ['Пример:', [
-        { p = '<u>Íbamos a comprar</u> una computadora nueva pero nos dijeron que es más barato reparar la vieja.' },
+        { p = '' },
+        { u = 'Íbamos a comprar' }, 
+        { r = 'una computadora nueva pero nos dijeron que es más barato reparar la vieja.' },
         { p = 'Мы собирались купить новый компьютер, но нам сказали, что дешевле отремонтировать старый.' }
     ]],
     ['Использование 2:', [
@@ -178,8 +192,10 @@ description = [
         { p = 'Предложениями в прошедшем времени.' }
     ]],
     ['Пример', [
-        { p = 'Creíamos que <u>ibas a llegar</u> más tarde.' },
-        { p = 'Мы думали, что ты <u>доберёшься</u> позже.' }
+        { p = 'Creíamos que' },
+        { u = 'ibas a llegar' }, 
+        { r = 'más tarde.' },
+        { p = 'Мы думали, что ты доберёшься позже.' }
     ]]
 ]
 
@@ -263,9 +279,9 @@ description = [
     ]],
     ['Примеры', [
         { p = '¿No sabrá qué hacer?' },
-        { p = 'Разве он может не знать, что делать!?' }
+        { p = 'Разве он может не знать, что делать?' }
         { p = '¿Estará vivo Elvis?' },
-        { p = 'Разве Элвис жив!?' }
+        { p = 'Разве Элвис жив?' }
     ]]
 ]
 
@@ -280,7 +296,9 @@ description = [
         { p = 'Предложениями в будущем.' }
     ]],
     ['Пример:', [
-        { p = 'Cuando <u>hayas terminado</u> de leer el manual, podrás resolver el problema.' },
+        { p = 'Cuando' },
+        { u = 'hayas terminado' },
+        { r = 'de leer el manual, podrás resolver el problema.' },
         { p = 'После того, как закончишь читать инструкцию, ты сможешь решить проблему.' }
     ]],
     ['Использование 2:', [
@@ -290,9 +308,11 @@ description = [
         { p = 'Предложениями в настоящем времени или в прошедшем времени совершенного вида.' }
     ]],
     ['Примеры', [
-        { p = 'Los documentos no demuestran que <u>haya vivido</u> en otro país.' },
+        { p = 'Los documentos no demuestran que' }, 
+        { u = 'haya vivido' },
+        { r = 'en otro país.' },
         { p = 'Документы не доказывают, что он проживал в другой стране.' },
-        { p = 'No creo que él <u>se haya dado</u> cuenta.' },
+        { p = 'No creo que él se haya dado cuenta.' },
         { p = 'Я не думаю, что он заметил.' }
     ]]
 ]
@@ -308,7 +328,9 @@ description = [
         { p = '"Сослагательное наклонение 1".' }
     ]],
     ['Пример:', [
-        { p = 'Cuando lleguemos <u>habrán cerrado</u> las puertas.' },
+        { p = 'Cuando lleguemos' },
+        { u = 'habrán cerrado' },
+        { r = 'las puertas.' },
         { p = 'Когда мы доберёмся, двери будут закрыты (сейчас они ещё открыты).' }
     ]],
     ['Использование 2:', [
@@ -332,7 +354,9 @@ description = [
         { p = '"Сослагательное наклонение 1".' }
     ]],
     ['Пример:', [
-        { p = 'Cuando vengas <u>voy a haber preparado</u> todo.' },
+        { p = 'Cuando vengas' }, 
+        { u = 'voy a haber preparado' },
+        { r = 'todo.' },
         { p = 'Когда ты придёшь (сюда), я (уже) всё подготовлю.' }
     ]],
     ['Использование 2:', [
@@ -355,9 +379,13 @@ description = [
         { p = 'Предложениями в настоящем или будущем времени.' }
     ]],
     ['Примеры:', [
-        { p = 'Ella quiere que la <u>ayudemos</u>.' },
+        { p = 'Ella quiere que la' },
+        { u = 'ayudemos' },
+        { r = '.' },
         { p = 'Она хочет, чтобы мы ей помогли.' },
-        { p = 'No creo que él <u>se dé</u> cuenta.' },
+        { p = 'No creo que él' },
+        { u = 'se dé' },
+        { r = 'cuenta.' },
         { p = 'Я не думаю, что он заметит.' }
     ]],
     ['Использование 2:', [
@@ -368,14 +396,16 @@ description = [
         { p = 'Предложениями в будущем времени или в повелительном наклонении.' }
     ]],
     ['Пример', [
-        { p = 'Te escribiré cuando <u>llegue</u> a la oficina.' },
+        { p = 'Te escribiré cuando' },
+        { u = 'llegue' },
+        { r = 'a la oficina.' },
         { p = 'Я напишу тебе, когда приеду в офис.' }
     ]],
     ['Использование 3:', [
         { p = '"Возможно" (о настоящем времени или о будущем).' }
     ]],
     ['Пример', [
-        { p = 'Quizás lo <u>intentemos</u> de nuevo.' },
+        { p = 'Quizás lo intentemos de nuevo.' },
         { p = 'Возможно, мы попытаемся снова.' }
     ]]
 ]
@@ -383,6 +413,9 @@ description = [
 ['Imperfecto subjuntivo']
 title = ['Сослагательное наклонение 2']
 description = [
+    ['Схема:', [
+        { p = 'Корень + "ase"/"ara" | "iese"/"iera".' }
+    ]],
     ['Использование 1:', [
         { p = 'Пожелания или требования.' },
         { p = 'Придаточное предложение после "чтобы" или "что".' }
@@ -390,11 +423,10 @@ description = [
     ['В сочетании с:', [
         { p = 'Предложениями в прошедшем времени.' }
     ]],
-    ['Схема:', [
-        { p = 'Корень + "ase"/"ara" | "iese"/"iera".' }
-    ]],
     ['Пример:', [
-        { p = 'Ella nos pidió que la <u>ayudásemos</u>.' },
+        { p = 'Ella nos pidió que la' },
+        { u = 'ayudásemos' },
+        { r = '.' },
         { p = 'Она попросила нас, чтобы мы ей помогли.' }
     ]],
     ['Использование 2:', [
@@ -404,7 +436,9 @@ description = [
         { p = '"Следствие маловероятных условии "бы"".' }
     ]],
     ['Пример:', [
-        { p = 'Si <u>tuviese</u> una lancha iría a la isla.' },
+        { p = 'Si' },
+        { u = 'tuviese' },
+        { r = 'una lancha iría a la isla.' },
         { p = 'Если бы у меня была лодка, я бы отправился на остров.' }
     ]]
 ]
@@ -412,6 +446,9 @@ description = [
 ['Futuro subjuntivo']
 title = ['Сослагательное наклонение 3']
 description = [
+    ['Схема:', [
+        { p = 'Корень + "are"/"iere".' }
+    ]],
     ['Использование:', [
         { p = 'Вероятное и возможное условие, в будущем ("если" или "когда").' },
         { p = 'Очень официально. Обычно, в юридических текстах.' }
@@ -419,11 +456,10 @@ description = [
     ['В сочетании с:', [
         { p = 'Предложениями в будущем.' }
     ]],
-    ['Схема:', [
-        { p = 'Корень + "are"/"iere".' }
-    ]],
     ['Пример:', [
-        { p = 'Si el proveedor no <u>entregare</u> el producto dentro de los tres días habiles, la empresa podrá rescindir el contrato.' },
+        { p = 'Si el proveedor no' },
+        { u = 'entregare' },
+        { r = 'el producto dentro de los tres días habiles, la empresa podrá rescindir el contrato.' },
         { p = 'Если поставщик не доставит товар в течение трёх рабочих дней, компания сможет расторгнуть договор.' }
     ]]
 ]
@@ -439,9 +475,13 @@ description = [
         { p = '"Следствие невыполненного условия в прошлом "бы""' }
     ]],
     ['Примеры:', [
-        { p = 'Si ella me <u>hubiese dicho</u> que iba a venir con amigos, habría preparado más comida.' },
+        { p = 'Si ella me' },
+        { u = 'hubiese dicho' },
+        { r = 'que iba a venir con amigos, habría preparado más comida.' },
         { p = 'Если бы она сказала мне, что она собиралась прийти с друзьями, я бы приготовил больше еды.' },
-        { p = 'Si mi abuela no <u>se hubiese muerto</u>, estaría viva. (Выражение)' },
+        { p = 'Si mi abuela no' },
+        { u = 'se hubiese muerto,' },
+        { r = 'estaría viva. (Выражение)' },
         { p = 'Если бы моя бабушка не умерла, она была бы жива.' }
     ]]
 ]
@@ -449,14 +489,14 @@ description = [
 ['Condicional indicativo']
 title = ['1: Следствие маловероятных условий "бы"', '2: Предсказание в прошлом']
 description = [
+    ['Схема:', [
+        { p = 'Инфинитив + "ía".' }
+    ]],
     ['Использование 1:', [
         { p = 'Последствие если условие выполняется. Совет.' }
     ]],
     ['В сочетании с:', [
         { p = '"Сослагательное наклонение 2"' }
-    ]],
-    ['Схема:', [
-        { p = 'Инфинитив + "ía".' }
     ]],
     ['Примеры:', [
         { p = 'Si tuviese mis herramientas aquí lo <u>repararía</u>.' },
