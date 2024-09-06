@@ -60,7 +60,7 @@ class Conjugador:
         self.new_dictionary = self.new_conjugations()
         self.exceptions = [
             'haber', 'costar', 'valer', 'doler', 'dolerse', 'gustar', 'interesar', 'encantar', 'desagradar', 'poder', 
-            'deber', 'holgar', 'urgir', 'atañer', 'acaecer', 'ocurrir', 'acontecer', 'incumbir'
+            'deber', 'holgar', 'holgarse', 'urgir', 'atañer', 'acaecer', 'ocurrir', 'ocurrirse', 'acontecer', 'incumbir'
         ]
 
     def parse_infinitivo_gerundio_participio(self):
@@ -243,8 +243,7 @@ class Conjugador:
                             conjugation = '¡' + \
                                 conjugation[1:].split(', ')[0].capitalize() + '!'
 
-                    conjugation = self.remove_after_last_o(
-                        header, tense, conjugation)
+                    conjugation = self.remove_after_last_o(header, tense, conjugation)
 
                     if pronoun_text in conjugations[header][tense]:
                         continue
@@ -585,6 +584,20 @@ class Conjugador:
                 for pronoun, conjugation in final_dict[tense].items():
                     if pronoun == 'Él, Ella, Usted':
                         filtered_pronouns['Impersonal'] = conjugation
+                if filtered_pronouns:
+                    final_dict[tense] = filtered_pronouns
+                else:
+                    del final_dict[tense]
+
+        if self.verb.lower() in ['doler','interesar', 'encantar', 'desagradar', 'holgar', 'urgir', \
+                                 'ocurrir', 'ocurrirse', 'incumbir', 'acontecer', 'acaecer', 'atañer']:
+            for tense in list(final_dict.keys()):
+                filtered_pronouns = {}
+                for pronoun, conjugation in final_dict[tense].items():
+                    if pronoun == 'Él, Ella, Usted':
+                        filtered_pronouns['Singular'] = conjugation
+                    if pronoun == 'Ellos, Ellas, Ustedes':
+                        filtered_pronouns['Plural'] = conjugation
                 if filtered_pronouns:
                     final_dict[tense] = filtered_pronouns
                 else:
