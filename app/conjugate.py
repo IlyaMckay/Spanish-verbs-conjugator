@@ -453,6 +453,28 @@ class Conjugador:
 
         return conjugations
 
+    def change_pronouns(self, final_dict, singular_pronoun, plural_pronoun=None):
+        """
+        Changes pronouns in the final_dict based on the provided singular and optional plural pronouns.
+        """
+        for tense in list(final_dict.keys()):
+            filtered_pronouns = {}
+            for pronoun, conjugation in final_dict[tense].items():
+                if pronoun == 'Él, Ella, Usted':
+                    filtered_pronouns[singular_pronoun] = conjugation
+                if plural_pronoun and pronoun == 'Ellos, Ellas, Ustedes':
+                    filtered_pronouns[plural_pronoun] = conjugation
+            if filtered_pronouns:
+                final_dict[tense] = filtered_pronouns
+            else:
+                del final_dict[tense]
+
+    def filter_impersonal_verbs(self, final_dict):
+        self.change_pronouns(final_dict, singular_pronoun='Impersonal')
+
+    def filter_singular_plural_verbs(self, final_dict):
+        self.change_pronouns(final_dict, singular_pronoun='Singular', plural_pronoun='Plural')
+
     def final_dictionary(self):
         """
         Generate a comprehensive dictionary of verb conjugations across various tenses.
@@ -579,29 +601,11 @@ class Conjugador:
                 final_dict[tense] = self.new_dictionary[tense]
 
         if self.verb.lower() in ['haber', 'llover', 'lloviznar', 'diluviar', 'nevar', 'granizar']:
-            for tense in list(final_dict.keys()):
-                filtered_pronouns = {}
-                for pronoun, conjugation in final_dict[tense].items():
-                    if pronoun == 'Él, Ella, Usted':
-                        filtered_pronouns['Impersonal'] = conjugation
-                if filtered_pronouns:
-                    final_dict[tense] = filtered_pronouns
-                else:
-                    del final_dict[tense]
+            self.filter_impersonal_verbs(final_dict)
 
-        if self.verb.lower() in ['doler','interesar', 'encantar', 'desagradar', 'holgar', 'urgir', \
-                                 'ocurrir', 'ocurrirse', 'incumbir', 'acontecer', 'acaecer', 'atañer']:
-            for tense in list(final_dict.keys()):
-                filtered_pronouns = {}
-                for pronoun, conjugation in final_dict[tense].items():
-                    if pronoun == 'Él, Ella, Usted':
-                        filtered_pronouns['Singular'] = conjugation
-                    if pronoun == 'Ellos, Ellas, Ustedes':
-                        filtered_pronouns['Plural'] = conjugation
-                if filtered_pronouns:
-                    final_dict[tense] = filtered_pronouns
-                else:
-                    del final_dict[tense]
+        if self.verb.lower() in ['doler', 'interesar', 'encantar', 'desagradar', 'holgar', 'urgir', 'ocurrir', 
+                                'ocurrirse', 'incumbir', 'acontecer', 'acaecer', 'atañer']:
+            self.filter_singular_plural_verbs(final_dict)
 
         return final_dict
 
