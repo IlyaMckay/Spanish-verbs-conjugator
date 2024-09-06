@@ -107,6 +107,8 @@ def truncate_all_tables():
     for table_name in db.tables():
         db.table(table_name).truncate()
 
+    print("Tables had been truncated")
+
 def show_first_five_records():
     """
     Prints the first five records from each table in the TinyDB database.
@@ -119,7 +121,7 @@ def show_first_five_records():
         table = db.table(table_name)
         records = table.all()
 
-        for record in records[:5]:
+        for record in records:#[:5]:
             print(record)
         print()
 
@@ -138,10 +140,15 @@ def delete_records(verbs):
         db.table('verbs').remove(Verb.verb == verb)
 
 
-# if __name__ == "__main__":
-#     words_to_delete = ['sonar', 'soñar', 'acunar', 'acuñar', 'poder', 'deber']
-#     delete_records(words_to_delete)
-#     # show_first_five_records()
-#     for word in words_to_delete:
-#         populate_db(word)
-#         print(get_verb(word))
+if __name__ == "__main__":
+    # truncate_all_tables()
+
+    # import os
+
+    # base_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+    # file_path = os.path.join(base_dir, 'process_verbs_for_db', 'final_list.txt')
+
+    # with open(file_path, 'r', encoding='utf-8') as file:
+    #     words = file.readlines()
+    #     for word in words:
+    #         populate_db(word)
