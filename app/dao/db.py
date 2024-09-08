@@ -8,8 +8,6 @@ sys.path.append(parent_dir)
 
 
 import bisect
-from time import sleep
-from flask import current_app
 from tinydb import TinyDB, Query
 from app.conjugate import Conjugador
 from app import app
