@@ -4,7 +4,6 @@ from app.conjugate import Conjugador
 from app.utils.form import form
 from app.srv.verb import get_conjugations
 from tomllib import load
-import sys
 import os
 
 
