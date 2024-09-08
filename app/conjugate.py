@@ -1,4 +1,4 @@
-from app.description_dict import description
+# from app.description_dict import description
 from app.dao.http_request import get_site
 import re
 
@@ -613,41 +613,25 @@ class Conjugador:
     @staticmethod
     def filter_conjugations(conjugations, accents):
         """
-        Filter out conjugations based on specified accents.
+        Filters conjugations based on specified pronoun variants (accents).
 
-        This method removes conjugations associated with pronouns that match any of the 
-        specified accents. It returns a filtered dictionary of conjugations.
+        This function removes conjugations associated with pronouns that are found in 
+        the list of accents. It returns a dictionary of conjugations, excluding 
+        those pronouns that match the specified accents.
 
-        :param conjugations: A dictionary of conjugations to be filtered.
-        :param accents: A list of accents to be excluded from the conjugations.
-        :return: A filtered dictionary of conjugations with specified accents removed.
+        :param conjugations: A dictionary of conjugations, where the keys are tenses 
+                            and the values are dictionaries of pronouns and their conjugated forms.
+        :param accents: A list of pronouns to be excluded from the conjugations.
+        :return: A filtered dictionary of conjugations excluding the specified accents.
         """
         
         filtered_conjugations = {}
 
         for tense, pronouns in conjugations.items():
-            tense_data = description.get(tense, {})
-            
-            if isinstance(tense_data, dict):
-                rus_tense = list(tense_data.keys())[0]
-                tense_info = tense_data[rus_tense]
-                descriptions_key = tense_info.keys()
-                descriptions_value = tense_info.values()
-            else:
-                rus_tense = tense
-                descriptions_key = 'Key placeholder'
-                descriptions_value = 'Value placeholder'
-
-            filtered_conjugations[rus_tense] = {
-                'conjugations': {},
-                'descriptions': {
-                    key: value for key, value in zip(descriptions_key, descriptions_value)
-                }
-            }
-
+            filtered_conjugations[tense] = {}
             for pronoun, conjugation in pronouns.items():
                 if pronoun.lower() not in accents:
-                    filtered_conjugations[rus_tense]['conjugations'][pronoun] = conjugation
+                    filtered_conjugations[tense][pronoun] = conjugation
 
         return filtered_conjugations
 
