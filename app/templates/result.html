@@ -7,37 +7,53 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 <body>
-    <div class="container">
-        <h1>Спряжения для глагола {{ verb.capitalize() }}</h1>
+    <main class="main">
+        <h1 class="main__header">Спряжения для глагола {{ verb.capitalize() }}</h1>
         {% for tense, data in conjugations.items() %}
-        <div class="tense-container">
-            <h2>{{ tense | safe }}</h2>
-            <div class="tables-container">
-                <div class="table-column">
-                    <table>
-                        {% for pronoun, conjugation in data['conjugations'].items() %}
-                        <tr>
-                            <td class="pronoun">{{ pronoun }}</td>
-                            <td class="conjugation">{{ conjugation }}</td>
-                        </tr>
+        <article class="tense">
+            {% for title in description[tense].title %}
+            <h2 class="tense__header"><a name="{{ title }}">{{ title }}</a></h2>
+            {% endfor %}    
+            <section class="tense__content">
+                <dl class="list list--regular">
+                    {% for pronoun, conjugation in data.items() %}
+                        <dt class="list__term">{{ pronoun }}</td>
+                        <dd class="list__description">{{ conjugation }}</td>
+                    {% endfor %}
+                </dl>
+            </section>
+            <section class="tense__content">
+                <dl class="list list--highlight">
+                    {% for desc in description[tense].description %}
+                    <dt class="list__term">{{ desc[0] }}</dt>
+                    <dd class="list__description">
+                        {% for item in desc[1] %}
+                            {% for style, text in item.items() %}
+                                {% if text[0] == '"' and text[-1] == '.' and text[-2] == '"' %}
+                                <a class="tense__link" href="#{{ text[1:-2] }}">
+                                {% endif %}
+                                    {% if style == "p" %}
+                                        <p>{{ text }}
+                                    {% elif style == "u" %}
+                                        <em>{{text}}</em>
+                                    {% elif style == "r" %}
+                                        <span>{{text}}</span>
+                                    {% else %}
+                                        <{{ style }}>{{ text }}</{{ style }}>
+                                    {% endif %}
+                                {% if text[0] == '"' and text[-1] == '.' and text[-2] == '"' %}
+                                </a>
+                                {% endif %}
+                            {% endfor %}
                         {% endfor %}
-                    </table>
-                </div>
-                <div class="table-column-description">
-                    <table>
-                        {% for key, value in data['descriptions'].items() %}
-                        <tr>
-                            <td class="key">{{ key | safe }}</td>
-                            <td class="value">{{ value | safe }}</td>
-                        </tr>
-                        {% endfor %}
-                    </table>
-                </div>
-            </div>
-        </div>
+                    </dd>
+                    {% endfor %}
+                </dl>
+            </section>
+        </article>
         {% endfor %}
         <br>
-        <a href="/">Назад</a>
-    </div>
+        <a href="/" onclick="history.back(); return false;" class="back__link">Назад</a>
+    </main>
 </body>
 </html>

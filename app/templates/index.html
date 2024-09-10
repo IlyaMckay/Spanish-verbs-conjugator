@@ -7,21 +7,27 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 <body>
-    <div class="container" style="width: max-content">
-        <h1>Спрягатор испанского языка</h1>
-        <form action="/result" method="post">
-            <label for="region">Выберите местоимения:</label>
-            <select id="region" name="region">
-                <option value="argentina">Con Voseo 🇦🇷 🇺🇾 🇵🇾 🇨🇷 🇸🇻 🇳🇮 🇭🇳</option>
-                <option value="espana">Vosotros 🇪🇸 🇬🇶</option>
-                <option value="mexico">Sin Voseo 🇲🇽 🇨🇴 🇻🇪 🇨🇺 🇵🇪 🇨🇱 🇧🇴 🇪🇨 🇵🇦 🇩🇴 🇺🇸 🇬🇹 🇮🇨</option>
-            </select>
-            <br><br>
-            <label for="verb">Введите глагол:</label>
-            <input type="text" id="verb" name="verb" placeholder="Amar/Amarse" required>
-            <br><br>
-            <input type="submit" value="Спрягать">
+    <main class="main" style="width: max-content">
+        <h1 class="main__header">Спрягатор испанского языка</h1>
+        <form action="/result" method="post" class="form">
+            <div class="form__group">
+                <label for="region" class="form__label">Выберите местоимения:</label>
+                <br>
+                <select id="region" name="region" class="form__select">
+                    <option value="argentina" {% if region == "argentina" %}selected{% endif %}>Con Voseo 🇦🇷 🇺🇾 🇵🇾 🇨🇷 🇸🇻 🇳🇮 🇭🇳</option>
+                    <option value="espana" {% if region == "espana" %}selected{% endif %}>Vosotros 🇪🇸 🇬🇶</option>
+                    <option value="mexico" {% if region == "mexico" %}selected{% endif %}>Sin Voseo 🇲🇽 🇨🇴 🇻🇪 🇨🇺 🇵🇪 🇨🇱 🇧🇴 🇪🇨 🇵🇦 🇩🇴 🇺🇸 🇬🇹 🇮🇨</option>
+                </select>
+            </div>
+            <div class="form__group">
+                <label for="verb" class="form__label">Введите глагол:</label>
+                <br>
+                <input type="text" id="verb" name="verb" placeholder="Amar/Amarse" class="form__input" required>
+            </div>
+            <div class="form__group">
+                <input type="submit" value="Спрягать" class="form__submit">
+            </div>
         </form>
-    </div>
+    </main>
 </body>
 </html>
