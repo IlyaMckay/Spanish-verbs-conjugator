@@ -3,13 +3,14 @@ from app import app
 from app.conjugate import Conjugador
 from app.utils.form import form
 from app.srv.verb import get_conjugations
-from tomllib import load
+from tomli import load
 import os
 
 
 current_dir = os.path.dirname(os.path.abspath(__file__))
-parent_dir = current_dir[:current_dir.rfind('\\')]
-desc_file = os.path.join(parent_dir, 'resources/description.toml')
+parent_dir = os.path.dirname(current_dir)
+desc_file = os.path.join(parent_dir, 'resources', 'description.toml')
+
 
 with open(desc_file, 'rb') as f:
     data = load(f)

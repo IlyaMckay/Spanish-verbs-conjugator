@@ -1,10 +1,9 @@
----
 applications:
 - name: flask-spanish-conjugations-app
   path: .
-  command: flask run --host=0.0.0.0 --port=$PORT
+  command: gunicorn -b 0.0.0.0:$PORT app:app
   memory: 256M
-  disk_quota: 256M
+  disk_quota: 512M
   health-check-type: process
   routes:
   - route: conj-me.cfapps.us10-001.hana.ondemand.com
