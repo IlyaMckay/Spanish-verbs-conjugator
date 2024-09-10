@@ -22,4 +22,4 @@ def index():
 @form.params(form=lambda: request.form, validators={"verb": Conjugador.is_spanish_verb})
 def result(verb, region):
     verb_info, conjugations = get_conjugations(verb, region)
-    return render_template('result.html', verb=verb_info, conjugations=conjugations, description=data)
+    return render_template('result.html', verb=verb_info, conjugations=conjugations, description=data, region=region)
