@@ -221,7 +221,7 @@ description = [
 ]
 
 ['Cohortativo afirmativo']
-title = ['Гортатив (утвердительный)']
+title = ['Гортатив']
 description = [
     ['Схема:', [
         { p = 'Корень + "e"/"a".' }
