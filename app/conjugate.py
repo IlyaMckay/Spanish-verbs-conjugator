@@ -1,6 +1,6 @@
-# from app.description_dict import description
-from app.dao.http_request import get_site
 import re
+
+from app.dao.http_request import get_site
 
 
 class Conjugador:

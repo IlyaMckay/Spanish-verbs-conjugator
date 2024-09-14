@@ -1,6 +1,5 @@
-import sys
 import os
-
+import sys
 
 current_dir = os.path.dirname(os.path.abspath(__file__))
 parent_dir = os.path.abspath(os.path.join(current_dir, '..'))
@@ -10,10 +9,10 @@ sys.path.append(root_dir)
 
 import bisect
 from time import sleep
-from flask import current_app
-from tinydb import TinyDB, Query
-from app.conjugate import Conjugador
+
 from app import app
+from app.conjugate import Conjugador
+from tinydb import Query, TinyDB
 
 
 def normalize_word(word):

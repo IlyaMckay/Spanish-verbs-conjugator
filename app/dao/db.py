@@ -7,10 +7,10 @@ parent_dir = current_dir[:current_dir.rfind('\\')]
 sys.path.append(parent_dir)
 
 
-import bisect
-from tinydb import TinyDB, Query
 from app.conjugate import Conjugador
 from app import app
+from tinydb import TinyDB, Query
+import bisect
 
 def init_db():
     pass
