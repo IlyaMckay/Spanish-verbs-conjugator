@@ -33,7 +33,7 @@ em {
 
 /* Main */
 .main {
-  max-width: calc(90.5% + 40px);
+  max-width: 90.5%;
   margin: 50px auto;
   padding: 20px;
   background: #80ADFF;
@@ -207,44 +207,83 @@ a.back__link:hover {
   filter: var(--description-filter);
 }
 
-/* Media Queries */
-@media (max-width: 768px) {
-  .container {
-    margin: 20px;
-    padding: 15px;
+/* Mobile Devices (Portrait) */
+@media (max-width: 599px) {
+  .main {
+    max-width: 100%;
+    padding: 10px;
+    margin: 20px auto;
+    box-shadow: none;
   }
 
-  .tables-container {
-    flex-direction: column; /* Stack tables vertically on small screens */
+  .tense {
+    flex-direction: column;
+    align-items: stretch;
   }
 
-  .table-column {
-    margin: 0 auto 10px; /* Center tables and add spacing */
-    min-width: 100%; /* Ensure full width for each column */
-  }
-  
-  .table-column-description {
-    margin: 0 auto 10px; /* Center tables and add spacing */
-    min-width: 100%; /* Ensure full width for each column */
+  .tense__content {
+    min-width: 100%;
+    max-width: 100%;
+    padding: 5px;
   }
 }
 
-@media (max-width: 480px) {
-  .tense-container h2 {
-    font-size: 18px; /* Reduce font size for headings on very small screens */
+/* Mobile Devices (Landscape) */
+@media (min-width: 600px) and (max-width: 899px) {
+  .main {
+    max-width: 95%;
+    padding: 15px;
+    margin: 30px auto;
   }
 
-  .container {
-    margin: 10px;
+  .tense {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .tense__content {
+    min-width: 100%;
+    max-width: 100%;
     padding: 10px;
   }
+}
 
-  input[type="text"],
-  select {
-    padding: 8px; /* Reduce padding for inputs */
+/* Tablets */
+@media (min-width: 900px) and (max-width: 1199px) {
+  .main {
+    max-width: 90%;
+    padding: 20px;
+    margin: 40px auto;
   }
 
-  input[type="submit"] {
-    padding: 8px;
+  .tense {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .tense__content {
+    min-width: 50%;
+    max-width: 50%;
+    padding: 10px;
+  }
+}
+
+/* Desktops */
+@media (min-width: 1200px) {
+  .main {
+    max-width: 80%;
+    padding: 30px;
+    margin: 50px auto;
+  }
+
+  .tense {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .tense__content {
+    min-width: 50%;
+    max-width: 50%;
+    padding: 20px;
   }
 }
