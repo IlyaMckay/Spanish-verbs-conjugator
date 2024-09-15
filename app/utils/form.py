@@ -8,8 +8,9 @@ class Form:
                 form_data = form()
                 for name in names:
                     if name in validators:
-                        validators[name](form_data[name])
-                    kwargs[name] = form_data[name]
+                        form_data_value = form_data[name].strip()
+                        validators[name](form_data_value)
+                    kwargs[name] = form_data[name].strip()
                 return fn(*args, **kwargs)
             return decorator
         return factory
