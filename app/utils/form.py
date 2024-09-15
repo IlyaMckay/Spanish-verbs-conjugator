@@ -1,4 +1,11 @@
 import inspect
+import re
+
+def sanitize_input(value):
+    """
+    Delete HTML-tags
+    """
+    return re.sub(r'<[^>]*?>', '', value)
 
 class Form:
     def params(self, form, validators):
@@ -8,7 +15,7 @@ class Form:
                 form_data = form()
                 for name in names:
                     if name in validators:
-                        form_data_value = form_data[name].strip()
+                        form_data_value = sanitize_input(form_data[name].strip())
                         validators[name](form_data_value)
                     kwargs[name] = form_data[name].strip()
                 return fn(*args, **kwargs)
