@@ -637,6 +637,5 @@ class Conjugador:
 
     @staticmethod
     def is_spanish_verb(word):
-        word = word.strip()
         if not re.match(r'^[a-zñáéíóúü]+$', word, re.IGNORECASE):
             raise ValueError("К сожалению, мы не нашли такой глагол. Пожалуйста, проверьте корректность ввода.")
