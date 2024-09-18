@@ -1,22 +1,31 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spanish Verb Conjugator</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
+
 <body>
-    <main class="main" style="width: max-content">
-        <h1 class="main__header">Спрягатор испанского языка</h1>
+    <main class="main">
+        <h1 class="main__header">Спрягатор</h1>
         <form action="/result" method="post" class="form">
+            <h3 class="main__description">Освоение испанских спряжений легко и понятно</h3>
             <div class="form__group">
                 <label for="region" class="form__label">Выберите местоимения:</label>
                 <br>
                 <select id="region" name="region" class="form__select">
-                    <option value="argentina" {% if region == "argentina" %}selected{% endif %}>Con Voseo 🇦🇷 🇺🇾 🇵🇾 🇨🇷 🇸🇻 🇳🇮 🇭🇳</option>
-                    <option value="espana" {% if region == "espana" %}selected{% endif %}>Vosotros 🇪🇸 🇬🇶</option>
-                    <option value="mexico" {% if region == "mexico" %}selected{% endif %}>Sin Voseo 🇲🇽 🇨🇴 🇻🇪 🇨🇺 🇵🇪 🇨🇱 🇧🇴 🇪🇨 🇵🇦 🇩🇴 🇺🇸 🇬🇹 🇮🇨</option>
+                    <option value="argentina" {% if region == "argentina" %}selected{% endif %}>
+                        Con Voseo 🇦🇷 🇺🇾 🇵🇾 🇨🇷 🇸🇻 🇳🇮 🇭🇳
+                    </option>
+                    <option value="espana" {% if region == "espana" %}selected{% endif %}>
+                        Vosotros 🇪🇸 🇬🇶
+                    </option>
+                    <option value="mexico" {% if region == "mexico" %}selected{% endif %}>
+                        Sin Voseo 🇲🇽 🇨🇴 🇻🇪 🇨🇺 🇵🇪 🇨🇱 🇧🇴 🇪🇨 🇵🇦 🇩🇴 🇺🇸 🇬🇹 🇮🇨
+                    </option>
                 </select>
             </div>
             <div class="form__group">
@@ -30,4 +39,5 @@
         </form>
     </main>
 </body>
+
 </html>
