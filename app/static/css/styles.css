@@ -33,7 +33,8 @@ em {
 
 /* Main */
 .main {
-  max-width: 90.5%;
+  width: 570px;
+  /* max-width: 90.5%; */
   margin: 50px auto;
   padding: 20px;
   background: #80ADFF;
@@ -46,8 +47,18 @@ em {
 }
 
 .main__header {
+  margin-bottom: 5px;
+  text-align: center;
   color: var(--text-color);
   filter: var(--shadow-filter);
+}
+
+.main__description {
+  color:#FFB985;
+  text-align: center;
+  margin-top:5px;
+  margin-bottom:20px;
+  filter: drop-shadow(0.1px 0.1px 0.5px #2A55A6);
 }
 
 /* Tense */
@@ -210,7 +221,7 @@ a.back__link:hover {
 /* Mobile Devices (Portrait) */
 @media (max-width: 599px) {
   .main {
-    max-width: 100%;
+    max-width: 95%;
     padding: 10px;
     margin: 20px auto;
     box-shadow: none;
