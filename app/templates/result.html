@@ -9,6 +9,50 @@
 <body>
     <main class="main">
         <h1 class="main__header">Спряжения для глагола {{ verb.capitalize() }}</h1>
+        <button class="explanation__button" onclick="toggleVisibility()">Схема использования вспомогательных глаголов</button>
+        <section class="explanation__form" id="explanation-section">
+            {% for el in explanation %}
+                {% if el == 'main' %}
+                <h3 class="table__header">{{ explanation[el]['node'][0] }}</h3>
+                <table>
+                    <tr style="font-weight: bold;">
+                        <td>{{ explanation[el]['values'][0] }}</td>
+                        <td>{{ explanation[el]['values'][1] }}</td>
+                        <td>{{ explanation[el]['values'][2] }}</td>
+                    </tr>
+                {% else %}
+                    <tr>
+                        <td>{{ explanation[el]['node'][0] }}</td>
+                        <td>
+                            {% if 'g' in explanation[el]['values'][0] %}
+                                <span class="value__g">{{ explanation[el]['values'][0]['g'] }}</span>
+                            {% endif %}
+                        </td>
+                        <td>
+                            {% if 'e' in explanation[el]['values'][1] %}
+                                <span class="value__e">{{ explanation[el]['values'][1]['e'] }}</span>
+                            {% endif %}
+                        </td>
+                    </tr>
+                    {% if explanation[el]['values'][2] and 'r' in explanation[el]['values'][2] %}
+                    <tr>
+                        <td></td>
+                        <td>
+                            {% if 'r' in explanation[el]['values'][2] %}
+                                <span class="value__r">{{ explanation[el]['values'][2]['r'] }}</span>
+                            {% endif %}
+                        </td>
+                        <td>
+                            {% if 'e' in explanation[el]['values'][3] %}
+                                <span class="value__e">{{ explanation[el]['values'][3]['e'] }}</span>
+                            {% endif %}
+                        </td>
+                    </tr>
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
+            </table>
+        </section>        
         {% for tense, data in conjugations.items() %}
         <article class="tense">
             {% for title in description[tense].title %}
@@ -55,5 +99,15 @@
         <br>
         <a href="/" onclick="history.back(); return false;" class="back__link">Назад</a>
     </main>
+    <script>
+        function toggleVisibility() {
+            var section = document.getElementById('explanation-section');
+            if (section.style.display === 'none') {
+                section.style.display = 'block';
+            } else {
+                section.style.display = 'none';
+            }
+        }
+    </script>
 </body>
 </html>
