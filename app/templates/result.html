@@ -15,15 +15,15 @@
                 {% if el == 'main' %}
                 <h3 class="table__header">{{ explanation[el]['node'][0] }}</h3>
                 <table>
-                    <tr style="font-weight: bold;">
+                    <tr class="table__columns">
                         <td>{{ explanation[el]['values'][0] }}</td>
                         <td>{{ explanation[el]['values'][1] }}</td>
                         <td>{{ explanation[el]['values'][2] }}</td>
                     </tr>
                 {% else %}
                     <tr>
-                        <td>{{ explanation[el]['node'][0] }}</td>
-                        <td>
+                        <td class="table__node">{{ explanation[el]['node'][0] }}</td>
+                        <td class="table__rg">
                             {% if 'g' in explanation[el]['values'][0] %}
                                 <span class="value__g">{{ explanation[el]['values'][0]['g'] }}</span>
                             {% endif %}
@@ -37,7 +37,7 @@
                     {% if explanation[el]['values'][2] and 'r' in explanation[el]['values'][2] %}
                     <tr>
                         <td></td>
-                        <td>
+                        <td class="table__rg">
                             {% if 'r' in explanation[el]['values'][2] %}
                                 <span class="value__r">{{ explanation[el]['values'][2]['r'] }}</span>
                             {% endif %}
