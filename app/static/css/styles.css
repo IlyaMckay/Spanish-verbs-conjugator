@@ -84,10 +84,36 @@ em {
   margin-bottom: 15px;
   border-radius: 5px;
   display: none;
-  background-color: var(--background-color);
+  background-color: #A0C1FF;
 }
 
 .table__header {
+  color: var(--text-color);
+  text-align: center;
+}
+
+.table__columns {
+  color: var(--text-color);
+  font-weight: bold;
+  text-align: left;
+}
+
+.table__node {
+  width: fit-content;
+  vertical-align: top;
+  font-weight: bold;
+  text-align: left;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  border-radius: var(--list-border-radius);
+  padding: 5px 8px 5px 5px;
+  filter: var(--term-filter);
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 25px;
+}
+
+.table__rg {
+  vertical-align: top;
   text-align: center;
 }
 
@@ -129,16 +155,25 @@ em {
 
 .value__g {
   color: #40af44;
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 .value__e {
-  color: var(--description-color);
+  width: fit-content;
+  font-weight: bold;
+  color: var(--background-color);
+  background-color: var(--text-color);
+  border-radius: 25px 0 25px 0;
+  margin: 0;
+  padding: 5px 8px 5px 7px;
+  filter: var(--description-filter);
+  vertical-align: top;
+  text-align: left;
 }
 
 .value__r {
   color: #f33729;
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 input[type="text"],
