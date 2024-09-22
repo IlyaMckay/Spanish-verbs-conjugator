@@ -61,6 +61,36 @@ em {
   filter: drop-shadow(0.1px 0.1px 0.5px #2A55A6);
 }
 
+.explanation__button {
+  font-weight: bold;
+  align-self: center;
+  width: fit-content;
+  max-width: 90.5%;
+  padding: 10px;
+  border: 1px solid #FFAE72;
+  border-radius: 5px;
+  background-color: #F5F5F5;
+  color: #ff9d52;
+  outline: none;
+  transition: color 0.3s ease, box-shadow 0.2s ease;
+}
+
+.explanation__form {
+  align-self: center;
+  width: fit-content;
+  padding: 10px;
+  max-width: 90.5%;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  display: none;
+  background-color: var(--background-color);
+}
+
+.table__header {
+  text-align: center;
+}
+
 /* Tense */
 .tense {
   margin-bottom: 20px;
@@ -95,6 +125,20 @@ em {
 
 .tense__header:last-of-type {
   margin-bottom: 5px;
+}
+
+.value__g {
+  color: #40af44;
+  font-weight: bold;
+}
+
+.value__e {
+  color: var(--description-color);
+}
+
+.value__r {
+  color: #f33729;
+  font-weight: bold;
 }
 
 input[type="text"],
