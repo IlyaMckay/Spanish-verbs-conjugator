@@ -137,6 +137,7 @@ def delete_records(verbs):
 
     for verb in verbs:
         db.table('verbs').remove(Verb.verb == verb)
+        print(f'{verb} - deleted')
 
 
 # if __name__ == "__main__":
@@ -151,3 +152,7 @@ def delete_records(verbs):
     #     words = file.readlines()
     #     for word in words:
     #         populate_db(word)
+    # delete_records(['acunar', 'acuñar'])
+    # for word in ['acunar', 'acuñar']:
+    #     populate_db(word)
+    #     print(get_verb(word))
