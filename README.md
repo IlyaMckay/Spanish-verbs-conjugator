@@ -1,23 +1,46 @@
-<p style='color: #6d9e2a;'>Conju🐊</p>
-
-Table of contents
+**Conju🐊 table of contents**
 
 - [Description](#description)
-- [How to use](#how-to-use)
-  - [Scheme of using auxiliary verbs](#scheme-of-using-auxiliary-verbs)
-  - [Example of data representation](#example-of-data-representation)
+- [How to Use](#how-to-use)
+    - [Page 1: Inintial Page](#page-1-inintial-page)
+    - [Page 2: Verb Conjugation Page](#page-2-verb-conjugation-page)
 
-## Description
+# Description
 
-Mastering verb conjugations in Spanish can be exhausting at first. Especially with the numerous auxiliary verbs that create countless combinations. But here's the secret: it's not as difficult as it seems!
+Mastering verb conjugations in Spanish can feel overwhelming, especially with the many auxiliary verbs that form endless combinations. But here's the secret: it’s not as hard as it seems!
 
-'Conjugator' will be your reliable companion in learning Spanish. Give it a try at [despacito.pythonanywhere.com](https://despacito.pythonanywhere.com/), and you'll see that mastering verb conjugations can actually be enjoyable and simple.
+**Conjugator** isn’t just another tool. We’ve designed it to be as clear and user-friendly as possible, avoiding complex terms and confusing structures. It helps you not only grasp the basic forms but also understand the most common and practical combinations. And the best part? You’ll gain the confidence to create your own combinations effortlessly!
 
-## How to use
+**Conjugator** is your reliable companion in learning Spanish. Try it out at [despacito.pythonanywhere.com](https://despacito.pythonanywhere.com/), and see how mastering verb conjugations can be both enjoyable and simple.
 
-Our conjugator isn't just another tool. We've made it as clear and user-friendly as possible, avoiding complex terms and confusing structures. It helps you not only learn the basic forms but also the most common and useful combinations, while providing clear explanations. And most importantly — you'll be able to easily create your own combinations!
+# How to Use
+    The Conjugator keeps things simple! There are only two pages to navigate.
 
-### Scheme of using auxiliary verbs
+### Page 1: Inintial Page
+
+On the first page, you can choose from three different regional accents, generalized for certain countries:
+
+- **Con Voseo:** 🇦🇷 🇺🇾 🇵🇾 🇨🇷 🇸🇻 🇳🇮 🇭🇳  
+- **Vosotros:** 🇪🇸 🇬🇶  
+- **Sin Voseo:** 🇲🇽 🇨🇴 🇻🇪 🇨🇺 🇵🇪 🇨🇱 🇧🇴 🇪🇨 🇵🇦 🇩🇴 🇺🇸 🇬🇹 🇮🇨
+
+Here’s how the pronouns differ based on the accent:
+
+| **Con Voseo**           | **Vosotros**             | **Sin Voseo**          |
+|-------------------------|--------------------------|------------------------|
+| Yo                      | Yo                       | Yo                     |
+| Vos                     | Tú                       | Tú                     |
+| Él, Ella, Usted          | Él, Ella, Usted          | Él, Ella, Usted         |
+| Nosotros, Nosotras       | Nosotros, Nosotras       | Nosotros, Nosotras      |
+|                          | Vosotros, Vosotras       |                         |
+| Ellos, Ellas, Ustedes    | Ellos, Ellas, Ustedes    | Ellos, Ellas, Ustedes   |
+
+
+There's also an input field where you can type any Spanish verb — including reflexive verbs!
+
+### Page 2: Verb Conjugation Page
+    On the second page, you’ll find a hidden table that can be revealed by clicking the button at the top.
+    
     The following table explains how to use the most common auxiliary verbs.
 
 | Structure           | Usage    | Meaning                                                          |
@@ -32,11 +55,9 @@ Our conjugator isn't just another tool. We've made it as clear and user-friendly
 | **Poder + infinitive**  |    ✓     | Expresses the possibility of performing an action.              |
 | **Deber + infinitive**  |    ✓     | Indicates obligation, desirable action, or necessity.           |
 
-
-
-### Example of data representation 
     The following table provides an example data representation.
 | Tense Name                                             | Description                                          | Scheme                                          | Use-Cases                                                       | Examples                                                                                                 |
 |-------------------------------------------------------|------------------------------------------------------|-------------------------------------------------|--------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
-| **Futuro indicativo**                                | **1: Future tense**                                 | *Infinitive + "e"/"a".*                        | **Promises and predictions.**                                   | *Volveremos la semana que viene.*                                                                         |
-|                                                       | **2: Hypothesis about the present**                 |                                                 | **Questioning, wondering, or hypothesizing about the present.** | *¿No sabrá qué hacer? ¿Estará vivo Elvis?*|
+| Futuro indicativo                                | 1: Future tense                                 | *Infinitive + "e"/"a".*                        | Promises and predictions.                                   | *Volveremos la semana que viene.*                                                                         |
+|                                                       | 2: Hypothesis about the present                 |                                                 | Questioning, wondering, or hypothesizing about the present. | *¿No sabrá qué hacer? ¿Estará vivo Elvis?*|
+
