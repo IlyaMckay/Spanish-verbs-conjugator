@@ -2,8 +2,12 @@
 
 - [Description](#description)
 - [How to Use](#how-to-use)
-    - [Page 1: Inintial Page](#page-1-inintial-page)
-    - [Page 2: Verb Conjugation Page](#page-2-verb-conjugation-page)
+  - [Page 1: Inintial Page](#page-1-inintial-page)
+    - [Here’s how the pronouns differ based on the accent.](#heres-how-the-pronouns-differ-based-on-the-accent)
+  - [Page 2: Verb Conjugation Page](#page-2-verb-conjugation-page)
+    - [The following table explains how to use the most common auxiliary verbs.](#the-following-table-explains-how-to-use-the-most-common-auxiliary-verbs)
+    - [The following table provides an example data representation.](#the-following-table-provides-an-example-data-representation)
+
 
 # Description
 
@@ -14,9 +18,11 @@ Mastering verb conjugations in Spanish can feel overwhelming, especially with th
 **Conjugator** is your reliable companion in learning Spanish. Try it out at [despacito.pythonanywhere.com](https://despacito.pythonanywhere.com/), and see how mastering verb conjugations can be both enjoyable and simple.
 
 # How to Use
-    The Conjugator keeps things simple! There are only two pages to navigate.
+    The Conjugator keeps things simple!
 
-### Page 1: Inintial Page
+    There are only two pages to navigate.
+
+## Page 1: Inintial Page
 
 On the first page, you can choose from three different regional accents, generalized for certain countries:
 
@@ -24,7 +30,7 @@ On the first page, you can choose from three different regional accents, general
 - **Vosotros:** 🇪🇸 🇬🇶  
 - **Sin Voseo:** 🇲🇽 🇨🇴 🇻🇪 🇨🇺 🇵🇪 🇨🇱 🇧🇴 🇪🇨 🇵🇦 🇩🇴 🇺🇸 🇬🇹 🇮🇨
 
-Here’s how the pronouns differ based on the accent:
+### Here’s how the pronouns differ based on the accent.
 
 | **Con Voseo**           | **Vosotros**             | **Sin Voseo**          |
 |-------------------------|--------------------------|------------------------|
@@ -35,13 +41,12 @@ Here’s how the pronouns differ based on the accent:
 |                          | Vosotros, Vosotras       |                         |
 | Ellos, Ellas, Ustedes    | Ellos, Ellas, Ustedes    | Ellos, Ellas, Ustedes   |
 
+    There's also an input field where you can type any Spanish verb — including reflexive verbs!
 
-There's also an input field where you can type any Spanish verb — including reflexive verbs!
-
-### Page 2: Verb Conjugation Page
+## Page 2: Verb Conjugation Page
     On the second page, you’ll find a hidden table that can be revealed by clicking the button at the top.
     
-    The following table explains how to use the most common auxiliary verbs.
+### The following table explains how to use the most common auxiliary verbs.
 
 | Structure           | Usage    | Meaning                                                          |
 |---------------------|----------|------------------------------------------------------------------|
@@ -55,7 +60,7 @@ There's also an input field where you can type any Spanish verb — including re
 | **Poder + infinitive**  |    ✓     | Expresses the possibility of performing an action.              |
 | **Deber + infinitive**  |    ✓     | Indicates obligation, desirable action, or necessity.           |
 
-    The following table provides an example data representation.
+### The following table provides an example data representation.
 | Tense Name                                             | Description                                          | Scheme                                          | Use-Cases                                                       | Examples                                                                                                 |
 |-------------------------------------------------------|------------------------------------------------------|-------------------------------------------------|--------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Futuro indicativo                                | 1: Future tense                                 | *Infinitive + "e"/"a".*                        | Promises and predictions.                                   | *Volveremos la semana que viene.*                                                                         |
