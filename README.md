@@ -4,19 +4,17 @@
 
 ## Table of Contents
 
-- [**Conjugator**](#conjugator)
-  - [Table of Contents](#table-of-contents)
-  - [Description](#description)
-  - [How to Use](#how-to-use)
-    - [Page 1: Inintial Page](#page-1-inintial-page)
-      - [Here’s how the pronouns differ based on the accent.](#heres-how-the-pronouns-differ-based-on-the-accent)
-    - [Page 2: Verb Conjugation Page](#page-2-verb-conjugation-page)
-      - [The following table explains how to use the most common auxiliary verbs.](#the-following-table-explains-how-to-use-the-most-common-auxiliary-verbs)
-      - [The following table provides an example data representation.](#the-following-table-provides-an-example-data-representation)
-  - [Architecture](#architecture)
-    - [The Backend](#the-backend)
-    - [The Frontend](#the-frontend)
-    - [Prerequisites and Requirements](#prerequisites-and-requirements)
+- [Description](#description)
+- [How to Use](#how-to-use)
+  - [Page 1: Inintial Page](#page-1-inintial-page)
+    - [Here’s how the pronouns differ based on the accent.](#heres-how-the-pronouns-differ-based-on-the-accent)
+  - [Page 2: Verb Conjugation Page](#page-2-verb-conjugation-page)
+    - [The following table explains how to use the most common auxiliary verbs.](#the-following-table-explains-how-to-use-the-most-common-auxiliary-verbs)
+    - [The following table provides an example data representation.](#the-following-table-provides-an-example-data-representation)
+- [Architecture](#architecture)
+  - [The Backend](#the-backend)
+  - [The Frontend](#the-frontend)
+  - [Prerequisites and Requirements](#prerequisites-and-requirements)
 
 
 ## Description
