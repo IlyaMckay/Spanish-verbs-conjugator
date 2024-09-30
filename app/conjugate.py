@@ -236,7 +236,7 @@ class Conjugador:
 
                     if '–' in conjugation:
                         conjugation = 'N/A'
-                    
+
                     if ', ' in conjugation:
                         conjugation = conjugation.split(', ')[0]
 
