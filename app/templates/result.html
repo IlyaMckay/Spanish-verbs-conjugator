@@ -102,6 +102,11 @@
         <a href="/" onclick="history.back(); return false;" class="back__link">Назад</a>
     </main>
     <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var section = document.getElementById('explanation-section');
+            section.style.display = 'none';
+        });
+    
         function toggleVisibility() {
             var section = document.getElementById('explanation-section');
             if (section.style.display === 'none') {
