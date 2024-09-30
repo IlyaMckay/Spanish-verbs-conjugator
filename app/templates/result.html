@@ -9,7 +9,9 @@
 <body>
     <main class="main">
         <h1 class="main__header">Спряжения для глагола {{ verb.capitalize() }}</h1>
-        <button class="explanation__button" onclick="toggleVisibility()">Схема использования вспомогательных глаголов</button>
+        <button class="explanation__button" onclick="toggleVisibility()">
+            Нажми сюда, чтобы посмотреть схему <!-- использования вспомогательных глаголов -->
+        </button>
         <section class="explanation__form" id="explanation-section">
             {% for el in explanation %}
                 {% if el == 'main' %}
@@ -28,7 +30,7 @@
                                 <span class="value__g">{{ explanation[el]['values'][0]['g'] }}</span>
                             {% endif %}
                         </td>
-                        <td>
+                        <td class="table__value">
                             {% if 'e' in explanation[el]['values'][1] %}
                                 <span class="value__e">{{ explanation[el]['values'][1]['e'] }}</span>
                             {% endif %}
@@ -42,7 +44,7 @@
                                 <span class="value__r">{{ explanation[el]['values'][2]['r'] }}</span>
                             {% endif %}
                         </td>
-                        <td>
+                        <td class="table__value">
                             {% if 'e' in explanation[el]['values'][3] %}
                                 <span class="value__e">{{ explanation[el]['values'][3]['e'] }}</span>
                             {% endif %}

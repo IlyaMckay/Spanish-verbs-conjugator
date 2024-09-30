@@ -23,7 +23,9 @@ body {
 }
 
 p {
-  margin: 0;
+  margin: 2px;
+  word-break: break-word;
+  hyphens: auto;
 }
 
 em {
@@ -56,7 +58,7 @@ em {
 .main__description {
   color:#FFB985;
   text-align: center;
-  margin-top:5px;
+  margin-top:0px;
   margin-bottom:20px;
   filter: drop-shadow(0.1px 0.1px 0.5px #2A55A6);
 }
@@ -153,6 +155,21 @@ em {
   margin-bottom: 5px;
 }
 
+.table__value {
+  width: fit-content;
+  font-weight: bold;
+  color: var(--background-color);
+  background-color: var(--text-color);
+  border-radius: 25px 0 25px 0;
+  margin: 0;
+  /* padding: 0px 8px 0px 7px; */
+  filter: var(--description-filter);
+  vertical-align: center;
+  text-align: left;
+  word-break: break-word;
+  hyphens: auto;
+}
+
 .value__g {
   color: #40af44;
   font-weight: bolder;
@@ -165,7 +182,7 @@ em {
   background-color: var(--text-color);
   border-radius: 25px 0 25px 0;
   margin: 0;
-  padding: 5px 8px 5px 7px;
+  padding: 0px 8px 0px 7px;
   filter: var(--description-filter);
   vertical-align: top;
   text-align: left;
@@ -284,7 +301,7 @@ a.back__link:hover {
   color: var(--term-color);
   background-color: var(--term-background);
   border-radius: var(--list-border-radius);
-  padding: 5px 0 5px 7px;
+  padding: 5px 5px 5px 7px;
   filter: var(--term-filter);
 }
 
@@ -293,7 +310,7 @@ a.back__link:hover {
   background-color: var(--description-background);
   border-radius: 25px 0 25px 0;
   margin: 0;
-  padding: 5px 0 5px 7px;
+  padding: 5px 5px 5px 7px;
   filter: var(--description-filter);
 }
 
