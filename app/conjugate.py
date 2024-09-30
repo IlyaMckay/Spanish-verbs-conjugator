@@ -1,4 +1,5 @@
 import re
+import string
 
 from app.dao.http_request import get_site
 
@@ -99,7 +100,7 @@ class Conjugador:
         if self.parsed_igp is None:
             raise ValueError("parsed_igp is None. Please ensure that parse_infinitivo_gerundio_participio() has been called.")
 
-        clear_content = [item for item in self.parsed_igp if item.isalpha()]
+        clear_content = [item.strip(string.punctuation) for item in self.parsed_igp if item.strip(string.punctuation).isalpha()]
 
         if not clear_content:
             raise ValueError("No valid items found in parsed_igp.")
@@ -235,6 +236,9 @@ class Conjugador:
 
                     if '–' in conjugation:
                         conjugation = 'N/A'
+                    
+                    if ', ' in conjugation:
+                        conjugation = conjugation.split(', ')[0]
 
                     if pronoun_text == 'Vos':
                         if ',' in conjugation:
