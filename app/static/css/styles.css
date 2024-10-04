@@ -1,5 +1,6 @@
 /* Google Fonts Import */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kodchasan:wght@400;700&display=swap');
 
 * {
   box-sizing: border-box;
@@ -49,6 +50,7 @@ em {
 }
 
 .main__header {
+  margin-top: 5px;
   margin-bottom: 5px;
   text-align: center;
   color: var(--text-color);
@@ -56,11 +58,31 @@ em {
 }
 
 .main__description {
-  color:#FFB985;
+  color: #FFB985;
   text-align: center;
-  margin-top:0px;
-  margin-bottom:20px;
+  margin-top: 0px;
+  margin-bottom: 20px;
   filter: drop-shadow(0.1px 0.1px 0.5px #2A55A6);
+}
+
+.footer {
+  font-size: medium;
+  text-align: center;
+  font-weight: bold;
+  color: var(--text-color);
+  padding: 10px;
+  background-color: transparent;
+  width: 100%;
+  filter: drop-shadow(0.2px 0.2px 0.2px #FEA765);
+}
+
+.footer__link {
+  font-family: 'Kodchasan', sans-serif;
+  font-weight: bold;
+  color: var(--text-color);
+  cursor: pointer;
+  text-decoration: none;
+  filter: drop-shadow(0.4px 0.4px 0.4px --text-color--highlight);
 }
 
 .explanation__button {
@@ -84,7 +106,7 @@ em {
   max-width: 90.5%;
   margin-top: 10px;
   margin-bottom: 15px;
-  border-radius: 5px;
+  border-radius: 10px;
   display: none;
   background-color: #A0C1FF;
 }
