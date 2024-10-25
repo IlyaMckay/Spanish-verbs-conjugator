@@ -127,6 +127,8 @@ class Conjugador:
                 if not clear_content[2].endswith('ndose') and clear_content[3].endswith('ndose'):
                     clear_content.pop(1)
                     clear_content[1] += clear_content.pop(2)
+                if clear_content[2].endswith('ndose'):
+                    clear_content.pop(1)
                 else:
                     if not clear_content[2].endswith('ndose'):
                         clear_content[1] += clear_content.pop(2)
