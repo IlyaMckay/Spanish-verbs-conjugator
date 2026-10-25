@@ -1,7 +1,15 @@
 <!-- omit in toc -->
 # **Conjugator**
 
-[**Conjugator**](https://despacito.pythonanywhere.com/) is your reliable companion in learning Spanish. Try it out and see how mastering verb conjugations can be both enjoyable and simple.
+> **Overview.** A web app for practicing Spanish verb conjugation, built under contract for a Spanish language school in 2024. It covers 2,000+ verbs across 29 tenses, with the three regional pronoun systems most conjugators skip (voseo, vosotros, sin voseo). I built the conjugation engine, a pipeline that extracts and normalizes verb lists from PDF and ODS sources into the database, and the Flask front end.
+>
+> **Status:** the hosted version is no longer online; the app runs locally (see Prerequisites below).
+>
+> **Stack:** Python · Flask · Gunicorn · TinyDB with custom ORM methods · TOML as a content store · BeautifulSoup
+
+---
+
+**Conjugator** is your reliable companion in learning Spanish. Try it out and see how mastering verb conjugations can be both enjoyable and simple.
 
 <!-- omit in toc -->
 ## Table of Contents
